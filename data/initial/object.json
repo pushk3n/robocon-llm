@@ -1,0 +1,28 @@
+{
+    "definitions": {
+        "kfs_r1": ["r1kfs_1", "r1kfs_2", "r1kfs_3"],
+        "kfs_r2": ["r2kfs_1", "r2kfs_2", "r2kfs_3", "r2kfs_4"],
+        "kfs_fake": ["fakekfs"],
+        "staff": ["staff_1", "staff_2", "staff_3", "staff_4"],
+        "spearhead": ["sh_trad_1", "sh_trad_2", "sh_fist_1", "sh_fist_2", "sh_palm_1", "sh_palm_2"],
+        "weapon": ["w1", "w2", "w3", "w4"]
+    },
+    "initial_locations": [
+        {"item": "staff_1", "location": "staff_rack"},
+        {"item": "staff_2", "location": "staff_rack"},
+        {"item": "staff_3", "location": "staff_rack"},
+        {"item": "staff_4", "location": "staff_rack"},
+        
+        {"item": "sh_trad_1", "location": "spearhead_rack"},
+        {"item": "sh_trad_2", "location": "spearhead_rack"},
+        {"item": "sh_fist_1", "location": "spearhead_rack"},
+        {"item": "sh_fist_2", "location": "spearhead_rack"},
+        {"item": "sh_palm_1", "location": "spearhead_rack"},
+        {"item": "sh_palm_2", "location": "spearhead_rack"},
+
+        {"item": "w1", "location": "limbo"},
+        {"item": "w2", "location": "limbo"},
+        {"item": "w3", "location": "limbo"},
+        {"item": "w4", "location": "limbo"}
+    ]
+}

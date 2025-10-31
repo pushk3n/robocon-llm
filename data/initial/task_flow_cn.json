@@ -1,0 +1,54 @@
+{
+    "_comment": [
+        "--- r2 机器人高层任务流程 (fsm 默认计划) ---",
+        "1. 本文件由 L3 fsm (Python 主循环的 TaskController) 读取.",
+        "2. fsm 按顺序提供 'goal_pddl' 作为“默认目标”给 L3 llm (AI 舰长).",
+        "3. llm (AI 舰长) 根据 'strategy.json' 微调的策略, 决定是“批准”此目标, 还是“否决/覆盖”此目标 (例如为了规避 r1 或敌方).",
+        "4. pddl (L2 导航官) 负责计算如何100%安全地达成 llm 的“最终目标”.",
+        "5. 循环/折返: 本流程是线性的. 例如, 在 'task_5_score_kfs_mid' 之后, llm 的策略应检查是否还有 kfs 需要获取, 并决定是 'PAUSE_TASK' (暂停) 并返回 'task_2_enter_mf' (折返), 还是继续流程."
+    ],
+    "task_flow": [
+        {
+            "task_id": "task_1_assemble_weapon",
+            "name": "协助 r1 组装 weapon (r2 负责拿 spearhead)",
+            "description": "r2 的首要任务是协助 r1 组装. r2 需要前往 spearhead_rack 附近的 mc_idle6, 拿取一个 spearhead, 然后移动到 MC_idle4, 等待 r1 拿来 staff 并执行 (assemble_weapon) 动作.",
+            "goal_pddl": "(and (holding r1 w1) (gripper_empty r2))"
+        },
+        {
+            "task_id": "task_2_enter_mf",
+            "name": "进入 MF (梅林)",
+            "description": "组装完成后, r2 必须等待 r1 离开 MC , 然后才能进入 MF. 此目标是到达 MF (R2_EN_zone).",
+            "goal_pddl": "(at r2 r2_en_zone)"
+        },
+        {
+            "task_id": "task_3_get_kfs",
+            "name": "获取一个 r2 kfs",
+            "description": "进入 MF 后, r2 必须首先从 f1, f2, 或 f3 之一获取第一个 kfs (Rule 4.4.14). 后续 kfs 必须从相邻格子获取 (Rule 4.4.15). 此 fsm 目标只要求 r2 拿到“任意一个” kfs. llm 和 pddl 将负责决定具体拿哪一个以及如何拿.",
+            "goal_pddl": "(or (holding r2 r2kfs_1) (holding r2 r2kfs_2) (holding r2 r2kfs_3) (holding r2 r2kfs_4))"
+        },
+        {
+            "task_id": "task_4_enter_arena",
+            "name": "进入 ARENA (对抗区)",
+            "description": "r2 必须携带至少一个 r2 kfs 才能进入 ARENA (Rule 3.7). 此目标是穿过 MF 出口 (r2_ex_zone1/2) 和 ramp, 到达 ARENA 的入口 (arena_idle1). pddl 求解器会自动验证 r2 是否满足 (holding ?k - kfs_r2) 的前提条件.",
+            "goal_pddl": "(at r2 arena_idle1)"
+        },
+        {
+            "task_id": "task_5_score_kfs_mid",
+            "name": "在九宫格中层得分",
+            "description": "r2 移动到 tic_tac_toe_rack 旁边的 arena_idle5, 并将 kfs 放置到中层 (Rule 3.8.b). 这个目标是让一个 kfs 出现在 'tic_tac_toe_rack_mid', 并且 r2 的手是空的 (准备“折返”获取下一个).",
+            "goal_pddl": "(and (exists (?k - kfs_r2) (item_at ?k tic_tac_toe_rack_mid)) (gripper_empty r2))"
+        },
+        {
+            "task_id": "task_6_score_kfs_top",
+            "name": "在九宫格顶层得分 (r1 协助)",
+            "description": "这是一个复杂的协作任务 (Rule 3.8.c), r2 必须被 r1 举起. 此 fsm 目标是让一个 kfs 出现在 'tic_tac_toe_rack_top'. llm 和 pddl 需要处理 'lift_r2' 等复杂动作.",
+            "goal_pddl": "(and (exists (?k - kfs_r2) (item_at ?k tic_tac_toe_rack_top)) (gripper_empty r2))"
+        },
+        {
+            "task_id": "task_7_end_game",
+            "name": "任务完成/停泊",
+            "description": "所有主要流程已完成. 机器人可以停在安全区域 (如 retry_zone) 或由 llm 决定执行循环 (返回 task_2_enter_mf).",
+            "goal_pddl": "(at r2 retry_zone)"
+        }
+    ]
+}

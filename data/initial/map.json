@@ -1,0 +1,425 @@
+{
+  "default_R2_access": true,
+  "zones": [
+    {
+      "name": "R1_start_zone",
+      "x_min": 0,
+      "x_max": 1000,
+      "y_min": 0,
+      "y_max": 1000,
+      "R2_access": true,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "R2_start_zone",
+      "x_min": 4200,
+      "x_max": 5000,
+      "y_min": 0,
+      "y_max": 800,
+      "R2_access": true,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "staff_rack",
+      "x_min": 2200,
+      "x_max": 3000,
+      "y_min": 0,
+      "y_max": 300,
+      "R2_access": false,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "spearhead_rack",
+      "x_min": 5875,
+      "x_max": 6000,
+      "y_min": 350,
+      "y_max": 1550,
+      "R2_access": false,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "MC_idle1",
+      "x_min": 0,
+      "x_max": 1000,
+      "y_min": 1000,
+      "y_max": 2000,
+      "R2_access": true,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "MC_idle2",
+      "x_min": 1000,
+      "x_max": 2200,
+      "y_min": 0,
+      "y_max": 2000,
+      "R2_access": true,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "MC_idle3",
+      "x_min": 2200,
+      "x_max": 3000,
+      "y_min": 300,
+      "y_max": 2000,
+      "R2_access": true,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "MC_idle4",
+      "x_min": 3000,
+      "x_max": 4200,
+      "y_min": 0,
+      "y_max": 2000,
+      "R2_access": true,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "MC_idle5",
+      "x_min": 4200,
+      "x_max": 5000,
+      "y_min": 800,
+      "y_max": 2000,
+      "R2_access": true,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "MC_idle6",
+      "x_min": 5000,
+      "x_max": 5875,
+      "y_min": 0,
+      "y_max": 2000,
+      "R2_access": true,
+      "parent_zone": "MC"
+    },
+    {
+      "name": "MC",
+      "x_min": 0,
+      "x_max": 6000,
+      "y_min": 0,
+      "y_max": 2000,
+      "R2_access": true,
+      "parent_zone": null,
+      "sub_zones": [
+        "R1_start_zone",
+        "R2_start_zone",
+        "staff_rack",
+        "spearhead_rack",
+        "MC_idle1","MC_idle2","MC_idle3","MC_idle4","MC_idle5","MC_idle6"
+      ]
+    },
+    {
+      "name": "R2_EN_zone",
+      "x_min": 1200,
+      "x_max": 4800,
+      "y_min": 2000,
+      "y_max": 3200,
+      "R2_access": true,
+      "parent_zone": "MF"
+    },
+    {
+      "name": "R2_EX_zone1",
+      "x_min": 0,
+      "x_max": 1500,
+      "y_min": 8000,
+      "y_max": 9300,
+      "R2_access": true,
+      "parent_zone": "MF"
+    },
+    {
+      "name": "R2_EX_zone2",
+      "x_min": 1500,
+      "x_max": 4800,
+      "y_min": 8000,
+      "y_max": 9440,
+      "R2_access": true,
+      "parent_zone": "MF"
+    },
+    {
+      "name": "R1_path_1",
+      "x_min": 0,
+      "x_max": 1200,
+      "y_min": 2000,
+      "y_max": 8000,
+      "R2_access": false,
+      "parent_zone": "MF"
+    },
+    {
+      "name": "R1_path_2",
+      "x_min": 4800,
+      "x_max": 6000,
+      "y_min": 2000,
+      "y_max": 9440,
+      "R2_access": false,
+      "parent_zone": "MF"
+    },
+    {
+      "name": "forest",
+      "x_min": 1200,
+      "x_max": 4800,
+      "y_min": 3200,
+      "y_max": 8000,
+      "R2_access": true,
+      "parent_zone": "MF",
+      "sub_zones": [
+        "F1", "F2", "F3",
+        "F4", "F5", "F6",
+        "F7", "F8", "F9",
+        "F10","F11","F12"
+      ]
+    },
+    {
+      "name": "F1",
+      "x_min": 1200,
+      "x_max": 2400,
+      "y_min": 3200,
+      "y_max": 4400,
+      "R2_access": true,
+      "height_level": 400,
+      "high_type": "mid",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F2",
+      "x_min": 2400,
+      "x_max": 3600,
+      "y_min": 3200,
+      "y_max": 4400,
+      "R2_access": true,
+      "height_level": 200,
+      "high_type": "low",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F3",
+      "x_min": 3600,
+      "x_max": 4800,
+      "y_min": 3200,
+      "y_max": 4400,
+      "R2_access": true,
+      "height_level": 400,
+      "high_type": "mid",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F4",
+      "x_min": 1200,
+      "x_max": 2400,
+      "y_min": 4400,
+      "y_max": 5600,
+      "R2_access": true,
+      "height_level": 200,
+      "high_type": "low",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F5",
+      "x_min": 2400,
+      "x_max": 3600,
+      "y_min": 4400,
+      "y_max": 5600,
+      "R2_access": true,
+      "height_level": 400,
+      "high_type": "mid",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F6",
+      "x_min": 3600,
+      "x_max": 4800,
+      "y_min": 4400,
+      "y_max": 5600,
+      "R2_access": true,
+      "height_level": 600,
+      "high_type": "high",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F7",
+      "x_min": 1200,
+      "x_max": 2400,
+      "y_min": 5600,
+      "y_max": 6800,
+      "R2_access": true,
+      "height_level": 400,
+      "high_type": "mid",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F8",
+      "x_min": 2400,
+      "x_max": 3600,
+      "y_min": 5600,
+      "y_max": 6800,
+      "R2_access": true,
+      "height_level": 600,
+      "high_type": "high",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F9",
+      "x_min": 3600,
+      "x_max": 4800,
+      "y_min": 5600,
+      "y_max": 6800,
+      "R2_access": true,
+      "height_level": 400,
+      "high_type": "mid",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F10",
+      "x_min": 1200,
+      "x_max": 2400,
+      "y_min": 6800,
+      "y_max": 8000,
+      "R2_access": true,
+      "height_level": 200,
+      "high_type": "low",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F11",
+      "x_min": 2400,
+      "x_max": 3600,
+      "y_min": 6800,
+      "y_max": 8000,
+      "R2_access": true,
+      "height_level": 400,
+      "high_type": "mid",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "F12",
+      "x_min": 3600,
+      "x_max": 4800,
+      "y_min": 6800,
+      "y_max": 8000,
+      "R2_access": true,
+      "height_level": 200,
+      "high_type": "low",
+      "parent_zone": "forest"
+    },
+    {
+      "name": "MF",
+      "x_min": 0,
+      "x_max": 6000,
+      "y_min": 2000,
+      "y_max": 9440,
+      "R2_access": true,
+      "parent_zone": null,
+      "sub_zones": [
+        "R2_EN_zone",
+        "R2_EX_zone1",
+        "R2_EX_zone2",
+        "R1_path_1",
+        "R1_path_2",
+        "forest"
+      ]
+    },
+    {
+      "name": "ramp",
+      "x_min": 0,
+      "x_max": 1500,
+      "y_min": 9300,
+      "y_max": 10800,
+      "R2_access": true,
+      "parent_zone": null
+    },
+    {
+      "name": "wall",
+      "x_min": 1500,
+      "x_max": 6000,
+      "y_min": 9450,
+      "y_max": 9500,
+      "R2_access": false,
+      "parent_zone": null
+    },
+    {
+      "name": "retry_zone",
+      "x_min": 0,
+      "x_max": 1000,
+      "y_min": 11000,
+      "y_max": 12000,
+      "R2_access": true,
+      "parent_zone": "ARENA"
+    },
+    {
+      "name": "used_weapon_area",
+      "x_min": 3500,
+      "x_max": 5000,
+      "y_min": 9500,
+      "y_max": 9800,
+      "R2_access": false,
+      "parent_zone": "ARENA"
+    },
+    {
+      "name": "tic_tac_toe_rack",
+      "x_min": 5865,
+      "x_max": 6000,
+      "y_min": 9940,
+      "y_max": 11560,
+      "R2_access": false,
+      "parent_zone": "ARENA"
+    },
+    {
+      "name": "ARENA_idle1",
+      "x_min": 0,
+      "x_max": 1500,
+      "y_min": 10800,
+      "y_max": 11000,
+      "R2_access": true,
+      "parent_zone": "ARENA"
+    },
+    {
+      "name": "ARENA_idle2",
+      "x_min": 1000,
+      "x_max": 1500,
+      "y_min": 11000,
+      "y_max": 12000,
+      "R2_access": true,
+      "parent_zone": "ARENA"
+    },
+    {
+      "name": "ARENA_idle3",
+      "x_min": 1500,
+      "x_max": 3500,
+      "y_min": 9500,
+      "y_max": 12000,
+      "R2_access": true,
+      "parent_zone": "ARENA"
+    },
+    {
+      "name": "ARENA_idle4",
+      "x_min": 3500,
+      "x_max": 5000,
+      "y_min": 9800,
+      "y_max": 12000,
+      "R2_access": true,
+      "parent_zone": "ARENA"
+    },
+    {
+      "name": "ARENA_idle5",
+      "x_min": 5000,
+      "x_max": 5865,
+      "y_min": 9500,
+      "y_max": 12000,
+      "R2_access": true,
+      "parent_zone": "ARENA"
+    },
+    {
+      "name": "ARENA",
+      "x_min": 0,
+      "x_max": 6000,
+      "y_min": 9500,
+      "y_max": 12000,
+      "R2_access": true,
+      "parent_zone": null,
+      "sub_zones": [
+        "retry_zone",
+        "used_weapon_area",
+        "tic_tac_toe_rack",
+        "ARENA_idle1","ARENA_idle2","ARENA_idle3","ARENA_idle4","ARENA_idle5"
+      ]
+    }
+  ]
+}

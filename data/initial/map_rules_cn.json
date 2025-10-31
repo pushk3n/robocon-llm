@@ -1,0 +1,34 @@
+ [
+  {
+    "id": "rule1",
+    "text": "未被标记为\"R2_access: false\"的区域默认为R2都可以进入, 但是明确标记了\"R2_access: false\"的区域R2均不可进入."
+  },
+  {
+    "id": "rule2",
+    "text": "地图尺寸是 6000mm x 12000mm."
+  },
+  {
+    "id": "rule3",
+    "text": "MC 包含 R1_start_zone, R2_start_zone, staff_rack, spearhead_rack, MC_idle1, MC_idle2, MC_idle3, MC_idle4, MC_idle5, MC_idle6 这些子区域."
+  },
+  {
+    "id": "rule4",
+    "text": "R2机器人的二维尺寸是 800mm x 800mm."
+  },
+  {
+    "id": "rule5",
+    "text": "MF 包含 R2_EN_zone, R2_EX_zone1, R2_EX_zone2, R1_path_1, R1_path_2, forest 这些子区域."
+  },
+  {
+    "id": "rule6",
+    "text": "ARENA 包含 retry_zone, used_weapon_area, tic_tac_toe_rack, ARENA_idle1, ARENA_idle2, ARENA_idle3, ARENA_idle4, ARENA_idle5 这些子区域."
+  },
+  {
+    "id": "rule7",
+    "text": " forest 由 F1 到 F12 这12个格子组成."
+  },
+  {
+    "id": "rule8",
+    "text": "ramp是连接 MF 和 ARENA 的斜坡. 由于ramp的设计, 从 MF 进入 ARENA 时, 必须先经过 R2_EX_zone1、ramp、ARENA_idle1, 然后才能到达 retry_zone."
+  }
+]

@@ -1,0 +1,55 @@
+{
+    "_comment": [
+        "--- R2 Robot High-Level Task Flow (FSM Default Plan) ---",
+        "1. This file is read by the L3 FSM (Python main loop's TaskController).",
+        "2. The FSM provides 'goal_pddl' sequentially as the 'default_goal' to the L3 LLM (AI Captain).",
+        "3. The LLM (AI Captain), based on strategies from 'strategy.json', decides whether to 'approve' this goal or 'veto/override' it (e.g., to avoid R1 or opponents).",
+        "4. PDDL (L2 Navigation Officer) is responsible for calculating the 100% safe path to achieve the LLM's 'final_goal'.",
+        "5. Loop/Cycle: This flow is linear. For example, after 'TASK_5_SCORE_KFS_MID', the LLM's strategy should check if more KFS are needed and decide whether to 'PAUSE_TASK' and return to 'TASK_2_ENTER_MF' (loop), or continue the flow."
+    ],
+    "task_flow": [
+        {
+            "task_id": "TASK_1_ASSEMBLE_WEAPON",
+            "name": "Assist R1 Assembly (R2 gets spearhead)",
+            "description": "R2's first task is to assist R1 with assembly. R2 needs to go to MC_idle6 (near spearhead_rack), pick up a spearhead, then move to a rendezvous point (like MC_idle4) and wait for R1 to bring a staff to execute the (assemble_weapon) action.",
+            "goal_pddl": "(and (holding r1 w1) (gripper_empty r2))"
+        },
+        {
+            "task_id": "TASK_2_ENTER_MF",
+            "name": "Enter MF (Plum Forest)",
+            "description": "After assembly, R2 must wait for R1 to leave the MC (Rule 4.3.10) before it can enter the MF. This goal is to reach the MF's entry area (R2_EN_zone).",
+            "goal_pddl": "(at r2 R2_EN_zone)"
+        },
+        {
+            "task_id": "TASK_3_GET_KFS",
+            "name": "Get one R2 KFS",
+            "description": "After entering MF, R2 must first get its first KFS from F1, F2, or F3 (Rule 4.4.14). Subsequent KFS must be picked from adjacent blocks (Rule 4.4.15). This FSM goal only requires R2 to get 'any' KFS. LLM and PDDL will decide which specific one to get and how.",
+            "goal_pddl": "(or (holding r2 r2kfs_1) (holding r2 r2kfs_2) (holding r2 r2kfs_3) (holding r2 r2kfs_4))"
+        },
+        {
+            "task_id": "TASK_4_ENTER_ARENA",
+            "name": "Enter ARENA (Confrontation Zone)",
+            "description": "R2 must carry at least one R2 KFS to enter the ARENA (Rule 3.7). This goal is to cross the MF exit (R2_EX_zone1/2) and ramp, arriving at the ARENA entry (ARENA_idle1). The PDDL solver will automatically verify if R2 meets the (holding ?k - kfs_r2) precondition.",
+            "goal_pddl": "(at r2 ARENA_idle1)"
+        },
+        {
+            "task_id": "TASK_5_SCORE_KFS_MID",
+            "name": "Score KFS on Middle Level",
+            "description": "R2 moves to ARENA_idle5 (beside tic_tac_toe_rack) and places a KFS on the middle level (Rule 3.8.b). This goal is for a KFS to be at 'tic_tac_toe_rack_mid' and for R2's gripper to be empty (ready to 'loop' for the next one).",
+            "goal_pddl": "(and (exists (?k - kfs_r2) (item_at ?k tic_tac_toe_rack_mid)) (gripper_empty r2))"
+        },
+        {
+            "task_id": "TASK_6_SCORE_KFS_TOP",
+            "name": "Score KFS on Top Level (R1 Assist)",
+            "description": "This is a complex cooperation task (Rule 3.8.c) where R2 must be lifted by R1. This FSM goal is for a KFS to be at 'tic_tac_toe_rack_top'. LLM and PDDL will need to handle complex actions like 'lift_r2'.",
+            "goal_pddl": "(and (exists (?k - kfs_r2) (item_at ?k tic_tac_toe_rack_top)) (gripper_empty r2))"
+        },
+        {
+            "task_id": "TASK_7_END_GAME",
+            "name": "Task Complete / Park",
+            "description": "All main flow tasks are complete. The robot can park in a safe area (like retry_zone) or the LLM can decide to loop (return to TASK_2_ENTER_MF).",
+            "goal_pddl": "(at r2 retry_zone)"
+        }
+    ]
+}
+

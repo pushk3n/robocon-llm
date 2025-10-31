@@ -1,0 +1,966 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='Gemini-Robocon-Map-Converter'>
+  
+  <!-- 
+    地图边界 (来自 map.json 和 map_rules_cn.json rule:2)
+    minlat/maxlat 对应 X 坐标 (0mm to 6000mm)
+    minlon/maxlon 对应 Y 坐标 (0mm to 12000mm)
+  -->
+  <bounds minlat='0' minlon='0' maxlat='6000' maxlon='12000'/>
+
+  <!-- 
+    ======================================================================
+    1. 区域节点 (Areas as Nodes)
+    根据 map.json 中的 "zones" 列表生成.
+    lat = 中心 x 坐标
+    lon = 中心 y 坐标
+    ======================================================================
+  -->
+
+  <!-- MC Zones (IDs 1-11) -->
+  <node id='1' lat='500' lon='500' version='1' visible='true'>
+    <tag k='name' v='R1_start_zone'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='1000'/>
+    <tag k='lon_min' v='0'/>
+    <tag k='lon_max' v='1000'/>
+  </node>
+  <node id='2' lat='4600' lon='400' version='1' visible='true'>
+    <tag k='name' v='R2_start_zone'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='4200'/>
+    <tag k='lat_max' v='5000'/>
+    <tag k='lon_min' v='0'/>
+    <tag k='lon_max' v='800'/>
+  </node>
+  <node id='3' lat='2600' lon='150' version='1' visible='true'>
+    <tag k='name' v='staff_rack'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='false'/>
+    <tag k='lat_min' v='2200'/>
+    <tag k='lat_max' v='3000'/>
+    <tag k='lon_min' v='0'/>
+    <tag k='lon_max' v='300'/>
+  </node>
+  <node id='4' lat='5937.5' lon='950' version='1' visible='true'>
+    <tag k='name' v='spearhead_rack'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='false'/>
+    <tag k='lat_min' v='5875'/>
+    <tag k='lat_max' v='6000'/>
+    <tag k='lon_min' v='350'/>
+    <tag k='lon_max' v='1550'/>
+  </node>
+  <node id='5' lat='500' lon='1500' version='1' visible='true'>
+    <tag k='name' v='MC_idle1'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='1000'/>
+    <tag k='lon_min' v='1000'/>
+    <tag k='lon_max' v='2000'/>
+  </node>
+  <node id='6' lat='1600' lon='1000' version='1' visible='true'>
+    <tag k='name' v='MC_idle2'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='1000'/>
+    <tag k='lat_max' v='2200'/>
+    <tag k='lon_min' v='0'/>
+    <tag k='lon_max' v='2000'/>
+  </node>
+  <node id='7' lat='2600' lon='1150' version='1' visible='true'>
+    <tag k='name' v='MC_idle3'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='2200'/>
+    <tag k='lat_max' v='3000'/>
+    <tag k='lon_min' v='300'/>
+    <tag k='lon_max' v='2000'/>
+  </node>
+  <node id='8' lat='3600' lon='1000' version='1' visible='true'>
+    <tag k='name' v='MC_idle4'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='3000'/>
+    <tag k='lat_max' v='4200'/>
+    <tag k='lon_min' v='0'/>
+    <tag k='lon_max' v='2000'/>
+  </node>
+  <node id='9' lat='4600' lon='1400' version='1' visible='true'>
+    <tag k='name' v='MC_idle5'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='4200'/>
+    <tag k='lat_max' v='5000'/>
+    <tag k='lon_min' v='800'/>
+    <tag k='lon_max' v='2000'/>
+  </node>
+  <node id='10' lat='5437.5' lon='1000' version='1' visible='true'>
+    <tag k='name' v='MC_idle6'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MC'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='5000'/>
+    <tag k='lat_max' v='5875'/>
+    <tag k='lon_min' v='0'/>
+    <tag k='lon_max' v='2000'/>
+  </node>
+  <node id='11' lat='3000' lon='1000' version='1' visible='true'>
+    <tag k='name' v='MC'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='null'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='6000'/>
+    <tag k='lon_min' v='0'/>
+    <tag k='lon_max' v='2000'/>
+  </node>
+
+  <!-- MF Zones (IDs 12-29) -->
+  <node id='12' lat='3000' lon='2600' version='1' visible='true'>
+    <tag k='name' v='R2_EN_zone'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MF'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='1200'/>
+    <tag k='lat_max' v='4800'/>
+    <tag k='lon_min' v='2000'/>
+    <tag k='lon_max' v='3200'/>
+  </node>
+  <node id='13' lat='750' lon='8650' version='1' visible='true'>
+    <tag k='name' v='R2_EX_zone1'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MF'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='1500'/>
+    <tag k='lon_min' v='8000'/>
+    <tag k='lon_max' v='9300'/>
+  </node>
+  <node id='14' lat='3150' lon='8720' version='1' visible='true'>
+    <tag k='name' v='R2_EX_zone2'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MF'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='1500'/>
+    <tag k='lat_max' v='4800'/>
+    <tag k='lon_min' v='8000'/>
+    <tag k='lon_max' v='9440'/>
+  </node>
+  <node id='15' lat='600' lon='5000' version='1' visible='true'>
+    <tag k='name' v='R1_path_1'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MF'/>
+    <tag k='R2_access' v='false'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='1200'/>
+    <tag k='lon_min' v='2000'/>
+    <tag k='lon_max' v='8000'/>
+  </node>
+  <node id='16' lat='5400' lon='5720' version='1' visible='true'>
+    <tag k='name' v='R1_path_2'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MF'/>
+    <tag k='R2_access' v='false'/>
+    <tag k='lat_min' v='4800'/>
+    <tag k='lat_max' v='6000'/>
+    <tag k='lon_min' v='2000'/>
+    <tag k='lon_max' v='9440'/>
+  </node>
+  <node id='17' lat='3000' lon='5600' version='1' visible='true'>
+    <tag k='name' v='forest'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='MF'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='1200'/>
+    <tag k='lat_max' v='4800'/>
+    <tag k='lon_min' v='3200'/>
+    <tag k='lon_max' v='8000'/>
+  </node>
+  <node id='18' lat='1800' lon='3800' version='1' visible='true'>
+    <tag k='name' v='F1'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='400'/>
+    <tag k='high_type' v='mid'/>
+    <tag k='lat_min' v='1200'/>
+    <tag k='lat_max' v='2400'/>
+    <tag k='lon_min' v='3200'/>
+    <tag k='lon_max' v='4400'/>
+  </node>
+  <node id='19' lat='3000' lon='3800' version='1' visible='true'>
+    <tag k='name' v='F2'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='200'/>
+    <tag k='high_type' v='low'/>
+    <tag k='lat_min' v='2400'/>
+    <tag k='lat_max' v='3600'/>
+    <tag k='lon_min' v='3200'/>
+    <tag k='lon_max' v='4400'/>
+  </node>
+  <node id='20' lat='4200' lon='3800' version='1' visible='true'>
+    <tag k='name' v='F3'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='400'/>
+    <tag k='high_type' v='mid'/>
+    <tag k='lat_min' v='3600'/>
+    <tag k='lat_max' v='4800'/>
+    <tag k='lon_min' v='3200'/>
+    <tag k='lon_max' v='4400'/>
+  </node>
+  <node id='21' lat='1800' lon='5000' version='1' visible='true'>
+    <tag k='name' v='F4'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='200'/>
+    <tag k='high_type' v='low'/>
+    <tag k='lat_min' v='1200'/>
+    <tag k='lat_max' v='2400'/>
+    <tag k='lon_min' v='4400'/>
+    <tag k='lon_max' v='5600'/>
+  </node>
+  <node id='22' lat='3000' lon='5000' version='1' visible='true'>
+    <tag k='name' v='F5'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='400'/>
+    <tag k='high_type' v='mid'/>
+    <tag k='lat_min' v='2400'/>
+    <tag k='lat_max' v='3600'/>
+    <tag k='lon_min' v='4400'/>
+    <tag k='lon_max' v='5600'/>
+  </node>
+  <node id='23' lat='4200' lon='5000' version='1' visible='true'>
+    <tag k='name' v='F6'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='600'/>
+    <tag k='high_type' v_level='high'/>
+    <tag k='lat_min' v='3600'/>
+    <tag k='lat_max' v='4800'/>
+    <tag k='lon_min' v='4400'/>
+    <tag k='lon_max' v='5600'/>
+  </node>
+  <node id='24' lat='1800' lon='6200' version='1' visible='true'>
+    <tag k='name' v='F7'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='400'/>
+    <tag k='high_type' v='mid'/>
+    <tag k='lat_min' v='1200'/>
+    <tag k='lat_max' v='2400'/>
+    <tag k='lon_min' v='5600'/>
+    <tag k='lon_max' v='6800'/>
+  </node>
+  <node id='25' lat='3000' lon='6200' version='1' visible='true'>
+    <tag k='name' v='F8'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='600'/>
+    <tag k='high_type' v_level='high'/>
+    <tag k='lat_min' v='2400'/>
+    <tag k='lat_max' v='3600'/>
+    <tag k='lon_min' v='5600'/>
+    <tag k='lon_max' v='6800'/>
+  </node>
+  <node id='26' lat='4200' lon='6200' version='1' visible='true'>
+    <tag k='name' v='F9'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='400'/>
+    <tag k='high_type' v_level='mid'/>
+    <tag k='lat_min' v='3600'/>
+    <tag k='lat_max' v='4800'/>
+    <tag k='lon_min' v='5600'/>
+    <tag k='lon_max' v='6800'/>
+  </node>
+  <node id='27' lat='1800' lon='7400' version='1' visible='true'>
+    <tag k='name' v='F10'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='200'/>
+    <tag k='high_type' v='low'/>
+    <tag k='lat_min' v='1200'/>
+    <tag k='lat_max' v='2400'/>
+    <tag k='lon_min' v='6800'/>
+    <tag k='lon_max' v='8000'/>
+  </node>
+  <node id='28' lat='3000' lon='7400' version='1' visible='true'>
+    <tag k='name' v='F11'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='400'/>
+    <tag k='high_type' v_level='mid'/>
+    <tag k='lat_min' v='2400'/>
+    <tag k='lat_max' v='3600'/>
+    <tag k='lon_min' v='6800'/>
+    <tag k='lon_max' v='8000'/>
+  </node>
+  <node id='29' lat='4200' lon='7400' version='1' visible='true'>
+    <tag k='name' v='F12'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='forest'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='height_level' v='200'/>
+    <tag k='high_type' v='low'/>
+    <tag k='lat_min' v='3600'/>
+    <tag k='lat_max' v='4800'/>
+    <tag k='lon_min' v='6800'/>
+    <tag k='lon_max' v='8000'/>
+  </node>
+  <node id='30' lat='3000' lon='5720' version='1' visible='true'>
+    <tag k='name' v='MF'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='null'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='6000'/>
+    <tag k='lon_min' v='2000'/>
+    <tag k='lon_max' v='9440'/>
+  </node>
+
+  <!-- Ramp & Wall (IDs 30-31) -->
+  <node id='31' lat='750' lon='10050' version='1' visible='true'>
+    <tag k='name' v='ramp'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='null'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='1500'/>
+    <tag k='lon_min' v='9300'/>
+    <tag k='lon_max' v='10800'/>
+  </node>
+  <node id='32' lat='3750' lon='9475' version='1' visible='true'>
+    <tag k='name' v='wall'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='null'/>
+    <tag k='R2_access' v='false'/>
+    <tag k='lat_min' v='1500'/>
+    <tag k='lat_max' v='6000'/>
+    <tag k='lon_min' v='9450'/>
+    <tag k='lon_max' v='9500'/>
+  </node>
+
+  <!-- ARENA Zones (IDs 32-41) -->
+  <node id='33' lat='500' lon='11500' version='1' visible='true'>
+    <tag k='name' v='retry_zone'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='ARENA'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='1000'/>
+    <tag k='lon_min' v='11000'/>
+    <tag k='lon_max' v='12000'/>
+  </node>
+  <node id='34' lat='4250' lon='9650' version='1' visible='true'>
+    <tag k='name' v='used_weapon_area'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='ARENA'/>
+    <tag k='R2_access' v='false'/>
+    <tag k='lat_min' v='3500'/>
+    <tag k='lat_max' v='5000'/>
+    <tag k='lon_min' v='9500'/>
+    <tag k='lon_max' v='9800'/>
+  </node>
+  <node id='35' lat='5932.5' lon='10750' version='1' visible='true'>
+    <tag k='name' v='tic_tac_toe_rack'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='ARENA'/>
+    <tag k='R2_access' v='false'/>
+    <tag k='lat_min' v='5865'/>
+    <tag k='lat_max' v='6000'/>
+    <tag k='lon_min' v='9940'/>
+    <tag k='lon_max' v='11560'/>
+  </node>
+  <node id='36' lat='750' lon='10900' version='1' visible='true'>
+    <tag k='name' v='ARENA_idle1'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='ARENA'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='1500'/>
+    <tag k='lon_min' v='10800'/>
+    <tag k='lon_max' v='11000'/>
+  </node>
+  <node id='37' lat='1250' lon='11500' version='1' visible='true'>
+    <tag k='name' v='ARENA_idle2'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='ARENA'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='1000'/>
+    <tag k='lat_max' v='1500'/>
+    <tag k='lon_min' v='11000'/>
+    <tag k='lon_max' v='12000'/>
+  </node>
+  <node id='38' lat='2500' lon='10750' version='1' visible='true'>
+    <tag k='name' v='ARENA_idle3'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='ARENA'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='1500'/>
+    <tag k='lat_max' v='3500'/>
+    <tag k='lon_min' v='9500'/>
+    <tag k='lon_max' v='12000'/>
+  </node>
+  <node id='39' lat='4250' lon='10900' version='1' visible='true'>
+    <tag k='name' v='ARENA_idle4'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='ARENA'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='3500'/>
+    <tag k='lat_max' v='5000'/>
+    <tag k='lon_min' v='9800'/>
+    <tag k='lon_max' v='12000'/>
+  </node>
+  <node id='40' lat='5432.5' lon='10750' version='1' visible='true'>
+    <tag k='name' v='ARENA_idle5'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='ARENA'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='5000'/>
+    <tag k='lat_max' v='5865'/>
+    <tag k='lon_min' v='9500'/>
+    <tag k='lon_max' v='12000'/>
+  </node>
+  <node id='41' lat='3000' lon='10750' version='1' visible='true'>
+    <tag k='name' v='ARENA'/>
+    <tag k='area' v='yes'/>
+    <tag k='parent_zone' v='null'/>
+    <tag k='R2_access' v='true'/>
+    <tag k='lat_min' v='0'/>
+    <tag k='lat_max' v='6000'/>
+    <tag k='lon_min' v='9500'/>
+    <tag k='lon_max' v='12000'/>
+  </node>
+
+
+  <!-- 
+    ======================================================================
+    2. 区域连接 (Passages as Ways)
+    根据 map_connection.json 中的 "verges" 列表生成.
+    ID 从 1001 开始.
+    ======================================================================
+  -->
+  
+  <way id='1001' version='1' visible='true'>
+    <nd ref='5'/>
+    <nd ref='1'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle1;R1_start_zone'/>
+  </way>
+  <way id='1002' version='1' visible='true'>
+    <nd ref='5'/>
+    <nd ref='6'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle1;MC_idle2'/>
+  </way>
+  <way id='1003' version='1' visible='true'>
+    <nd ref='6'/>
+    <nd ref='3'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle2;staff_rack'/>
+  </way>
+  <way id='1004' version='1' visible='true'>
+    <nd ref='6'/>
+    <nd ref='7'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle2;MC_idle3'/>
+  </way>
+  <way id='1005' version='1' visible='true'>
+    <nd ref='7'/>
+    <nd ref='3'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle3;staff_rack'/>
+  </way>
+  <way id='1006' version='1' visible='true'>
+    <nd ref='7'/>
+    <nd ref='8'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle3;MC_idle4'/>
+  </way>
+  <way id='1007' version='1' visible='true'>
+    <nd ref='8'/>
+    <nd ref='9'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle4;MC_idle5'/>
+  </way>
+  <way id='1008' version='1' visible='true'>
+    <nd ref='8'/>
+    <nd ref='2'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle4;R2_start_zone'/>
+  </way>
+  <way id='1009' version='1' visible='true'>
+    <nd ref='9'/>
+    <nd ref='2'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle5;R2_start_zone'/>
+  </way>
+  <way id='1010' version='1' visible='true'>
+    <nd ref='9'/>
+    <nd ref='10'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle5;MC_idle6'/>
+  </way>
+  <way id='1011' version='1' visible='true'>
+    <nd ref='4'/>
+    <nd ref='10'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='spearhead_rack;MC_idle6'/>
+  </way>
+  <way id='1012' version='1' visible='true'>
+    <nd ref='12'/>
+    <nd ref='6'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EN_zone;MC_idle2'/>
+  </way>
+  <way id='1013' version='1' visible='true'>
+    <nd ref='12'/>
+    <nd ref='7'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EN_zone;MC_idle3'/>
+  </way>
+  <way id='1014' version='1' visible='true'>
+    <nd ref='12'/>
+    <nd ref='8'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EN_zone;MC_idle4'/>
+  </way>
+  <way id='1015' version='1' visible='true'>
+    <nd ref='12'/>
+    <nd ref='9'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EN_zone;MC_idle5'/>
+  </way>
+  <way id='1016' version='1' visible='true'>
+    <nd ref='5'/>
+    <nd ref='15'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle1;R1_path_1'/>
+  </way>
+  <way id='1017' version='1' visible='true'>
+    <nd ref='9'/>
+    <nd ref='16'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle5;R1_path_2'/>
+  </way>
+  <way id='1018' version='1' visible='true'>
+    <nd ref='10'/>
+    <nd ref='16'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='MC_idle6;R1_path_2'/>
+  </way>
+  <way id='1019' version='1' visible='true'>
+    <nd ref='12'/>
+    <nd ref='15'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EN_zone;R1_path_1'/>
+  </way>
+  <way id='1020' version='1' visible='true'>
+    <nd ref='12'/>
+    <nd ref='16'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EN_zone;R1_path_2'/>
+  </way>
+  <way id='1021' version='1' visible='true'>
+    <nd ref='12'/>
+    <nd ref='17'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EN_zone;forest'/>
+  </way>
+  <way id='1022' version='1' visible='true'>
+    <!-- 重复的连接: R2_EN_zone to forest -->
+    <nd ref='12'/>
+    <nd ref='17'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EN_zone;forest'/>
+  </way>
+  <way id='1023' version='1' visible='true'>
+    <nd ref='12'/>
+    <nd ref='19'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EN_zone;F2'/>
+  </way>
+  <way id='1024' version='1' visible='true'>
+    <nd ref='19'/>
+    <nd ref='18'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F2;F1'/>
+  </way>
+  <way id='1025' version='1' visible='true'>
+    <nd ref='19'/>
+    <nd ref='20'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F2;F3'/>
+  </way>
+  <way id='1026' version='1' visible='true'>
+    <nd ref='19'/>
+    <nd ref='22'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F2;F5'/>
+  </way>
+  <way id='1027' version='1' visible='true'>
+    <nd ref='18'/>
+    <nd ref='21'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F1;F4'/>
+  </way>
+  <way id='1028' version='1' visible='true'>
+    <nd ref='20'/>
+    <nd ref='23'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F3;F6'/>
+  </way>
+  <way id='1029' version='1' visible='true'>
+    <nd ref='21'/>
+    <nd ref='22'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F4;F5'/>
+  </way>
+  <way id='1030' version='1' visible='true'>
+    <nd ref='21'/>
+    <nd ref='24'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F4;F7'/>
+  </way>
+  <way id='1031' version='1' visible='true'>
+    <nd ref='22'/>
+    <nd ref='23'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F5;F6'/>
+  </way>
+  <way id='1032' version='1' visible='true'>
+    <nd ref='22'/>
+    <nd ref='25'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F5;F8'/>
+  </way>
+  <way id='1033' version='1' visible='true'>
+    <nd ref='23'/>
+    <nd ref='26'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F6;F9'/>
+  </way>
+  <way id='1034' version='1' visible='true'>
+    <nd ref='24'/>
+    <nd ref='25'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F7;F8'/>
+  </way>
+  <way id='1035' version='1' visible='true'>
+    <nd ref='24'/>
+    <nd ref='27'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F7;F10'/>
+  </way>
+  <way id='1036' version='1' visible='true'>
+    <nd ref='25'/>
+    <nd ref='26'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F8;F9'/>
+  </way>
+  <way id='1037' version='1' visible='true'>
+    <nd ref='25'/>
+    <nd ref='28'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F8;F11'/>
+  </way>
+  <way id='1038' version='1' visible='true'>
+    <nd ref='26'/>
+    <nd ref='29'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F9;F12'/>
+  </way>
+  <way id='1039' version='1' visible='true'>
+    <nd ref='27'/>
+    <nd ref='28'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F10;F11'/>
+  </way>
+  <way id='1040' version='1' visible='true'>
+    <nd ref='28'/>
+    <nd ref='29'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F11;F12'/>
+  </way>
+  <way id='1041' version='1' visible='true'>
+    <nd ref='27'/>
+    <nd ref='14'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F10;R2_EX_zone2'/>
+  </way>
+  <way id='1042' version='1' visible='true'>
+    <nd ref='29'/>
+    <nd ref='14'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='F12;R2_EX_zone2'/>
+  </way>
+  <way id='1043' version='1' visible='true'>
+    <nd ref='15'/>
+    <nd ref='13'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R1_path_1;R2_EX_zone1'/>
+  </way>
+  <way id='1044' version='1' visible='true'>
+    <nd ref='16'/>
+    <nd ref='14'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R1_path_2;R2_EX_zone2'/>
+  </way>
+  <way id='1045' version='1' visible='true'>
+    <nd ref='13'/>
+    <nd ref='31'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='R2_EX_zone1;ramp'/>
+    <tag k='rule:note' v='Rule 8: Path to ramp'/>
+  </way>
+  <way id='1046' version='1' visible='true'>
+    <nd ref='31'/>
+    <nd ref='36'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ramp;ARENA_idle1'/>
+    <tag k='rule:note' v='Rule 8: Path from ramp to ARENA_idle1'/>
+  </way>
+  <way id='1047' version='1' visible='true'>
+    <nd ref='36'/>
+    <nd ref='33'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle1;retry_zone'/>
+    <tag k='rule:note' v='Rule 8: Path to retry_zone'/>
+  </way>
+  <way id='1048' version='1' visible='true'>
+    <nd ref='36'/>
+    <nd ref='37'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle1;ARENA_idle2'/>
+  </way>
+  <way id='1049' version='1' visible='true'>
+    <nd ref='36'/>
+    <nd ref='38'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle1;ARENA_idle3'/>
+  </way>
+  <way id='1050' version='1' visible='true'>
+    <nd ref='37'/>
+    <nd ref='38'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle2;ARENA_idle3'/>
+  </way>
+  <way id='1051' version='1' visible='true'>
+    <nd ref='38'/>
+    <nd ref='39'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle3;ARENA_idle4'/>
+  </way>
+  <way id='1052' version='1' visible='true'>
+    <nd ref='39'/>
+    <nd ref='40'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle4;ARENA_idle5'/>
+  </way>
+  <way id='1053' version='1' visible='true'>
+    <nd ref='38'/>
+    <nd ref='34'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle3;used_weapon_area'/>
+  </way>
+  <way id='1054' version='1' visible='true'>
+    <nd ref='39'/>
+    <nd ref='34'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle4;used_weapon_area'/>
+  </way>
+  <way id='1055' version='1' visible='true'>
+    <nd ref='40'/>
+    <nd ref='34'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle5;used_weapon_area'/>
+  </way>
+  <way id='1056' version='1' visible='true'>
+    <nd ref='40'/>
+    <nd ref='35'/>
+    <tag k='passage' v='yes'/>
+    <tag k='highway' v='path'/>
+    <tag k='connects' v='ARENA_idle5;tic_tac_toe_rack'/>
+  </way>
+
+
+  <!-- 
+    ======================================================================
+    3. 层次结构 (Hierarchy as Relations)
+    根据 map.json 中的 "sub_zones" 和 "parent_zone" 属性生成.
+    ID 从 2001 开始.
+    ======================================================================
+  -->
+
+  <!-- Rule 3: MC 包含 ... -->
+  <relation id='2001' version='1' visible='true'>
+    <member type='node' ref='11' role='parent_area'/>
+    <member type='node' ref='1' role='sub_area'/>
+    <member type='node' ref='2' role='sub_area'/>
+    <member type='node' ref='3' role='sub_area'/>
+    <member type='node' ref='4' role='sub_area'/>
+    <member type='node' ref='5' role='sub_area'/>
+    <member type='node' ref='6' role='sub_area'/>
+    <member type='node' ref='7' role='sub_area'/>
+    <member type='node' ref='8' role='sub_area'/>
+    <member type='node' ref='9' role='sub_area'/>
+    <member type='node' ref='10' role='sub_area'/>
+    <tag k='type' v='hierarchy'/>
+    <tag k='name' v='MC'/>
+    <tag k='note' v='Rule 3: MC container'/>
+  </relation>
+
+  <!-- Rule 5: MF 包含 ... -->
+  <relation id='2002' version='1' visible='true'>
+    <member type='node' ref='30' role='parent_area'/>
+    <member type='node' ref='12' role='sub_area'/>
+    <member type='node' ref='13' role='sub_area'/>
+    <member type='node' ref='14' role='sub_area'/>
+    <member type='node' ref='15' role='sub_area'/>
+    <member type='node' ref='16' role='sub_area'/>
+    <member type='node' ref='17' role='sub_area'/>
+    <tag k='type' v='hierarchy'/>
+    <tag k='name' v='MF'/>
+    <tag k='note' v='Rule 5: MF container'/>
+  </relation>
+
+  <!-- Rule 7: forest 包含 ... -->
+  <relation id='2003' version='1' visible='true'>
+    <member type='node' ref='17' role='parent_area'/>
+    <member type='node' ref='18' role='sub_area'/>
+    <member type='node' ref='19' role='sub_area'/>
+    <member type='node' ref='20' role='sub_area'/>
+    <member type='node' ref='21' role='sub_area'/>
+    <member type='node' ref='22' role='sub_area'/>
+    <member type='node' ref='23' role='sub_area'/>
+    <member type='node' ref='24' role='sub_area'/>
+    <member type='node' ref='25' role='sub_area'/>
+    <member type='node' ref='26' role='sub_area'/>
+    <member type='node' ref='27' role='sub_area'/>
+    <member type='node' ref='28' role='sub_area'/>
+    <member type='node' ref='29' role='sub_area'/>
+    <tag k='type' v='hierarchy'/>
+    <tag k='name' v='forest'/>
+    <tag k='note' v='Rule 7: forest container'/>
+  </relation>
+
+  <!-- Rule 6: ARENA 包含 ... -->
+  <relation id='2004' version='1' visible='true'>
+    <member type='node' ref='41' role='parent_area'/>
+    <member type='node' ref='33' role='sub_area'/>
+    <member type='node' ref='34' role='sub_area'/>
+    <member type='node'
+     ref='35' role='sub_area'/>
+    <member type='node' ref='36' role='sub_area'/>
+    <member type='node' ref='37' role='sub_area'/>
+    <member type='node' ref='38' role='sub_area'/>
+    <member type='node' ref='39' role='sub_area'/>
+    <member type='node' ref='40' role='sub_area'/>
+    <tag k='type' v='hierarchy'/>
+    <tag k='name' v='ARENA'/>
+    <tag k='note' v='Rule 6: ARENA container'/>
+  </relation>
+
+  <!-- 
+    ======================================================================
+    4. 地图规则 (Map Rules)
+    根据 map_rules_cn.json 生成.
+    ID 从 3001 开始.
+    ======================================================================
+  -->
+  <relation id='3001' version='1' visible='true'>
+    <tag k='type' v='metadata'/>
+    <tag k='name' v='Map Rules (CN)'/>
+    <tag k='rule:1' v='未被标记为"R2_access: false"的区域默认为R2都可以进入, 但是明确标记了"R2_access: false"的区域R2均不可进入.'/>
+    <tag k='rule:2' v='地图尺寸是 6000mm x 12000mm.'/>
+    <tag k='rule:3' v='MC 包含 R1_start_zone, R2_start_zone, staff_rack, spearhead_rack, MC_idle1, MC_idle2, MC_idle3, MC_idle4, MC_idle5, MC_idle6 这些子区域.'/>
+    <tag k='rule:4' v='R2机器人的二维尺寸是 800mm x 800mm.'/>
+    <tag k='rule:5' v='MF 包含 R2_EN_zone, R2_EX_zone1, R2_EX_zone2, R1_path_1, R1_path_2, forest 这些子区域.'/>
+    <tag k='rule:6' v='ARENA 包含 retry_zone, used_weapon_area, tic_tac_toe_rack, ARENA_idle1, ARENA_idle2, ARENA_idle3, ARENA_idle4, ARENA_idle5 这些子区域.'/>
+    <tag k='rule:7' v='forest 由 F1 到 F12 这12个格子组成.'/>
+    <tag k='rule:8' v='ramp是连接 MF 和 ARENA 的斜坡. 由于ramp的设计, 从 MF 进入 ARENA 时, 必须先经过 R2_EX_zone1、ramp、ARENA_idle1, 然后才能到达 retry_zone.'/>
+  </relation>
+
+</osm>

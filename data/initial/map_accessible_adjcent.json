@@ -1,9 +1,13 @@
 [
     {
         "name": "ARENA",
-        "adjacent_zone": [
+        "partial_overlapped_zone": [
             "ramp"
+        ],
+        "adjacent_zone": [
+            
         ]
+
     },
     {
         "name": "ARENA_idle1",

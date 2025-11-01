@@ -8,7 +8,14 @@
       "y_min": 0,
       "y_max": 1000,
       "R2_access": true,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone": [
+        "MC_idle1","MC_idle2"
+      ],
+      "accessible_adjacent_zone":[
+        "MC_idle1","MC_idle2"
+      ]
     },
     {
       "name": "R2_start_zone",
@@ -17,7 +24,14 @@
       "y_min": 0,
       "y_max": 800,
       "R2_access": true,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone": [
+        "MC_idle4","MC_idle5","MC_idle6"
+      ],
+      "accessible_adjacent_zone":[
+        "MC_idle4","MC_idle5","MC_idle6"
+      ]
     },
     {
       "name": "staff_rack",
@@ -26,7 +40,14 @@
       "y_min": 0,
       "y_max": 300,
       "R2_access": false,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone": [
+        "MC_idle2","MC_idle3","MC_idle4"
+      ],
+      "accessible_adjacent_zone":[
+        
+      ]
     },
     {
       "name": "spearhead_rack",
@@ -35,7 +56,14 @@
       "y_min": 350,
       "y_max": 1550,
       "R2_access": false,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone": [
+        "MC_idle6"
+      ],
+      "accessible_adjacent_zone":[
+        
+      ]
     },
     {
       "name": "MC_idle1",
@@ -44,7 +72,15 @@
       "y_min": 1000,
       "y_max": 2000,
       "R2_access": true,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone": [
+        "R1_start_zone","MC_idle2",
+        "R1_path_1","MF"
+      ],
+      "accessible_adjacent_zone":[
+        "R1_start_zone","MC_idle2"
+      ]
     },
     {
       "name": "MC_idle2",
@@ -53,7 +89,15 @@
       "y_min": 0,
       "y_max": 2000,
       "R2_access": true,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone": [
+        "MC_idle1","MC_idle3","R1_start_zone","staff_rack",
+        "R1_path_1","R2_EN_zone","MF"
+      ],
+      "accessible_adjacent_zone":[
+        "MC_idle1","MC_idle3","R1_start_zone","R2_EN_zone","MF"
+      ]
     },
     {
       "name": "MC_idle3",
@@ -62,7 +106,19 @@
       "y_min": 300,
       "y_max": 2000,
       "R2_access": true,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone": [
+        "MC_idle2","MC_idle4","staff_rack",
+        "MF","R2_EN_zone"
+      ],
+      "accessible_adjacent_zone":[
+        "MC_idle2","MC_idle4",
+        "MF","R2_EN_zone"
+      ],
+      "touch_only_adjacent_zone": [
+        "staff_rack"
+      ]
     },
     {
       "name": "MC_idle4",
@@ -71,7 +127,16 @@
       "y_min": 0,
       "y_max": 2000,
       "R2_access": true,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone":[
+        "MC_idle3","MC_idle5","R2_start_zone","staff_rack",
+        "MF","R2_EN_zone"
+      ],
+      "accessible_adjacent_zone":[
+        "MC_idle3","MC_idle5","R2_start_zone",
+        "MF","R2_EN_zone"
+      ]
     },
     {
       "name": "MC_idle5",
@@ -80,7 +145,15 @@
       "y_min": 800,
       "y_max": 2000,
       "R2_access": true,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone":[
+        "MC_idle4","MC_idle6","R2_start_zone",
+        "R2_EN_zone","R1_path_2","MF"
+      ],
+      "accessible_adjacent_zone":[
+        "MC_idle4","MC_idle6","R2_start_zone"
+      ]
     },
     {
       "name": "MC_idle6",
@@ -89,7 +162,18 @@
       "y_min": 0,
       "y_max": 2000,
       "R2_access": true,
-      "parent_zone": "MC"
+      "parent_zone": "MC",
+      "sub_zones":null,
+      "adjacent_zone":[
+        "MC_idle5","spearhead_rack","R2_start_zone",
+        "R1_path_2","MF"
+      ],
+      "accessible_adjacent_zone":[
+        "MC_idle5","R2_start_zone"
+      ],
+      "touch_only_adjacent_zone": [
+        "spearhead_rack"
+      ]
     },
     {
       "name": "MC",
@@ -97,7 +181,6 @@
       "x_max": 6000,
       "y_min": 0,
       "y_max": 2000,
-      "R2_access": true,
       "parent_zone": null,
       "sub_zones": [
         "R1_start_zone",
@@ -105,6 +188,12 @@
         "staff_rack",
         "spearhead_rack",
         "MC_idle1","MC_idle2","MC_idle3","MC_idle4","MC_idle5","MC_idle6"
+      ],
+      "adjacent_zone":[
+        "MF","R1_path_1","R1_path_2","R2_EN_zone"
+      ],
+      "accessible_adjacent_zone":[
+        "MF","R2_EN_zone"
       ]
     },
     {
@@ -114,7 +203,16 @@
       "y_min": 2000,
       "y_max": 3200,
       "R2_access": true,
-      "parent_zone": "MF"
+      "parent_zone": "MF",
+      "sub_zones":null,
+      "adjacent_zone":[
+        "R1_path_1","R1_path_2","forest",
+        "F1","F2","F3",
+        "MC","MC_idle2","MC_idle3","MC_idle4","MC_idle5"
+      ],
+      "accessible_adjacent_zone":[
+        "MC_idle3","MC_idle4","forest","F2"
+      ]
     },
     {
       "name": "R2_EX_zone1",
@@ -123,7 +221,15 @@
       "y_min": 8000,
       "y_max": 9300,
       "R2_access": true,
-      "parent_zone": "MF"
+      "parent_zone": "MF",
+      "sub_zones":null,
+      "adjacent_zone":[
+        "ramp","R2_EX_zone2","R1_path_1","F10",
+        "forest"
+      ],
+      "accessible_adjacent_zone":[
+        "ramp","R2_EX_zone2"
+      ]
     },
     {
       "name": "R2_EX_zone2",
@@ -132,7 +238,16 @@
       "y_min": 8000,
       "y_max": 9440,
       "R2_access": true,
-      "parent_zone": "MF"
+      "parent_zone": "MF",
+      "sub_zones":null,
+      "adjacent_zone":[
+        "wall","forest","R2_EX_zone1","R1_path_2",
+        "ramp","F10","F11","F12"
+      ],
+      "accessible_adjacent_zone":[
+        "forest","R2_EX_zone1",
+        "F10","F12"
+      ]
     },
     {
       "name": "R1_path_1",
@@ -141,7 +256,17 @@
       "y_min": 2000,
       "y_max": 8000,
       "R2_access": false,
-      "parent_zone": "MF"
+      "parent_zone": "MF",
+      "sub_zones":null,
+      "adjacent_zone":[
+        "R2_EN_zone","R2_EX_zone1",
+        "F1","F4","F7","F10",
+        "MC_idle1","MC_idle2",
+        "MC","forest"
+      ],
+      "accessible_adjacent_zone":[
+        
+      ]
     },
     {
       "name": "R1_path_2",
@@ -150,7 +275,17 @@
       "y_min": 2000,
       "y_max": 9440,
       "R2_access": false,
-      "parent_zone": "MF"
+      "parent_zone": "MF",
+      "sub_zones": null,
+      "adjacent_zone":[
+        "F3","F6","F9","F12",
+        "R2_EX_zone2","R2_EN_zone",
+        "MC_idle6","MC_idle5",
+        "MC","forest"
+      ],
+      "accessible_adjacent_zone":[
+        
+      ]
     },
     {
       "name": "forest",
@@ -165,6 +300,13 @@
         "F4", "F5", "F6",
         "F7", "F8", "F9",
         "F10","F11","F12"
+      ],
+      "adjacent_zone": [
+        "R1_path_1","R1_path_2","R2_EN_zone",
+        "R2_EX_zone1","R2_EX_zone2"
+      ],
+      "accessible_adjacent_zone":[
+        "R2_EN_zone","R2_EX_zone1","R2_EX_zone2"
       ]
     },
     {
@@ -176,7 +318,14 @@
       "R2_access": true,
       "height_level": 400,
       "high_type": "mid",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F2","F4","R1_path_1","R2_EN_zone"
+      ],
+      "accessible_adjacent_zone":[
+        "F2","F4","R2_EN_zone"
+      ]
     },
     {
       "name": "F2",
@@ -187,7 +336,14 @@
       "R2_access": true,
       "height_level": 200,
       "high_type": "low",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F3","F5","F1","R2_EN_zone"
+      ],
+      "accessible_adjacent_zone":[
+        "F3","F5","F1","R2_EN_zone"
+      ]
     },
     {
       "name": "F3",
@@ -198,7 +354,16 @@
       "R2_access": true,
       "height_level": 400,
       "high_type": "mid",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F2", "F6","R1_path_2",
+        "R2_EN_zone"
+      ],
+      "accessible_adjacent_zone":[
+        "F2", "F6",
+        "R2_EN_zone"
+      ]
     },
     {
       "name": "F4",
@@ -209,7 +374,15 @@
       "R2_access": true,
       "height_level": 200,
       "high_type": "low",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F1","F5","F7",
+        "R1_path_1"
+      ],
+      "accessible_adjacent_zone":[
+        "F1","F5","F7"
+      ]
     },
     {
       "name": "F5",
@@ -220,7 +393,14 @@
       "R2_access": true,
       "height_level": 400,
       "high_type": "mid",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F2","F4","F6","F8"
+      ],
+      "accessible_adjacent_zone":[
+        "F2","F4","F6","F8"
+      ]
     },
     {
       "name": "F6",
@@ -231,7 +411,15 @@
       "R2_access": true,
       "height_level": 600,
       "high_type": "high",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F3", "F5", "F9",
+        "R1_path_2"
+      ],
+      "accessible_adjacent_zone":[
+        "F3", "F5", "F9"
+      ]
     },
     {
       "name": "F7",
@@ -242,7 +430,15 @@
       "R2_access": true,
       "height_level": 400,
       "high_type": "mid",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F4", "F8", "F10",
+        "R1_path_1"
+      ],
+      "accessible_adjacent_zone":[
+        "F4", "F8", "F10"
+      ]
     },
     {
       "name": "F8",
@@ -253,7 +449,14 @@
       "R2_access": true,
       "height_level": 600,
       "high_type": "high",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F5", "F7", "F9", "F11"
+      ],
+      "accessible_adjacent_zone":[
+        "F5", "F7", "F9", "F11"
+      ]
     },
     {
       "name": "F9",
@@ -264,7 +467,15 @@
       "R2_access": true,
       "height_level": 400,
       "high_type": "mid",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F6","F12","F8",
+        "R1_path_2"
+      ],
+      "accessible_adjacent_zone":[
+        "F6","F12","F8"
+      ]
     },
     {
       "name": "F10",
@@ -275,7 +486,16 @@
       "R2_access": true,
       "height_level": 200,
       "high_type": "low",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F7","F11",
+        "R2_EX_zone2","R2_EX_zone1"
+      ],
+      "accessible_adjacent_zone":[
+        "F7","F11",
+        "R2_EX_zone2","R2_EX_zone1"
+      ]
     },
     {
       "name": "F11",
@@ -286,7 +506,16 @@
       "R2_access": true,
       "height_level": 400,
       "high_type": "mid",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F10","F12","F8",
+        "R2_EX_zone2"
+      ],
+      "accessible_adjacent_zone":[
+        "F10","F12","F8",
+        "R2_EX_zone2"
+      ]
     },
     {
       "name": "F12",
@@ -297,15 +526,19 @@
       "R2_access": true,
       "height_level": 200,
       "high_type": "low",
-      "parent_zone": "forest"
+      "parent_zone": "forest",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "F11","F9",
+        "R2_EX_zone2","R1_path_2"
+      ],
+      "accessible_adjacent_zone":[
+        "F11","F9",
+        "R2_EX_zone2"
+      ]
     },
     {
       "name": "MF",
-      "x_min": 0,
-      "x_max": 6000,
-      "y_min": 2000,
-      "y_max": 9440,
-      "R2_access": true,
       "parent_zone": null,
       "sub_zones": [
         "R2_EN_zone",
@@ -313,7 +546,19 @@
         "R2_EX_zone2",
         "R1_path_1",
         "R1_path_2",
-        "forest"
+        "forest",
+        "F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12"
+      ],
+      "adjacent_zone": [
+        "MC",
+        "wall",
+        "ramp",
+        "MC_idle1","MC_idle2","MC_idle3",
+        "MC_idle4","MC_idle5","MC_idle6"
+      ],
+      "accessible_adjacent_zone":[
+        "MC_idle2","MC_idle3",
+        "MC_idle4","MC","ramp"
       ]
     },
     {
@@ -323,7 +568,18 @@
       "y_min": 9300,
       "y_max": 10800,
       "R2_access": true,
-      "parent_zone": null
+      "parent_zone": null,
+      "sub_zones": null,
+      "adjacent_zone": [
+        "R2_EX_zone1",
+        "R2_EX_zone2",
+        "wall",
+        "ARENA_idle3",
+        "ARENA_idle1"
+      ],
+      "accessible_adjacent_zone":[
+        "R2_EX_zone1","ARENA_idle1"
+      ]
     },
     {
       "name": "wall",
@@ -332,7 +588,20 @@
       "y_min": 9450,
       "y_max": 9500,
       "R2_access": false,
-      "parent_zone": null
+      "parent_zone": null,
+      "sub_zones": null,
+      "adjacent_zone": [
+        "ramp",
+        "ARENA_idle3",
+        "ARENA_idle5",
+        "R1_path_1",
+        "R1_path_2",
+        "R2_EX_zone1",
+        "R2_EX_zone2"
+      ],
+      "accessible_adjacent_zone":[
+        
+      ]
     },
     {
       "name": "retry_zone",
@@ -341,7 +610,15 @@
       "y_min": 11000,
       "y_max": 12000,
       "R2_access": true,
-      "parent_zone": "ARENA"
+      "parent_zone": "ARENA",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "ARENA_idle1",
+        "ARENA_idle2"
+      ],
+      "accessible_adjacent_zone":[
+        "ARENA_idle1","ARENA_idle2"
+      ]
     },
     {
       "name": "used_weapon_area",
@@ -350,7 +627,17 @@
       "y_min": 9500,
       "y_max": 9800,
       "R2_access": false,
-      "parent_zone": "ARENA"
+      "parent_zone": "ARENA",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "ARENA_idle3",
+        "ARENA_idle4",
+        "ARENA_idle5",
+        "wall"
+      ],
+      "accessible_adjacent_zone":[
+        
+      ]
     },
     {
       "name": "tic_tac_toe_rack",
@@ -359,7 +646,14 @@
       "y_min": 9940,
       "y_max": 11560,
       "R2_access": false,
-      "parent_zone": "ARENA"
+      "parent_zone": "ARENA",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "ARENA_idle5"
+      ],
+      "accessible_adjacent_zone":[
+        
+      ]
     },
     {
       "name": "ARENA_idle1",
@@ -368,7 +662,19 @@
       "y_min": 10800,
       "y_max": 11000,
       "R2_access": true,
-      "parent_zone": "ARENA"
+      "parent_zone": "ARENA",
+      "sub_zones": null,
+      "adjacent_zone": [
+            "ARENA_idle2",
+            "ARENA_idle3",
+            "ramp",
+            "retry_zone"
+      ],
+      "accessible_adjacent_zone":[
+            "ARENA_idle2",
+            "ramp",
+            "retry_zone"
+      ]
     },
     {
       "name": "ARENA_idle2",
@@ -377,7 +683,18 @@
       "y_min": 11000,
       "y_max": 12000,
       "R2_access": true,
-      "parent_zone": "ARENA"
+      "parent_zone": "ARENA",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "ARENA_idle1",
+        "ARENA_idle3",
+        "retry_zone"
+      ],
+      "accessible_adjacent_zone":[
+        "ARENA_idle1",
+        "ARENA_idle3",
+        "retry_zone"
+      ]
     },
     {
       "name": "ARENA_idle3",
@@ -386,7 +703,19 @@
       "y_min": 9500,
       "y_max": 12000,
       "R2_access": true,
-      "parent_zone": "ARENA"
+      "parent_zone": "ARENA",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "ARENA_idle4",
+        "used_weapon_area",
+        "ARENA_idle2",
+        "ARENA_idle1",
+        "wall",
+        "ramp"
+      ],
+      "accessible_adjacent_zone":[
+        "ARENA_idle2","ARENA_idle4"
+      ]
     },
     {
       "name": "ARENA_idle4",
@@ -395,7 +724,20 @@
       "y_min": 9800,
       "y_max": 12000,
       "R2_access": true,
-      "parent_zone": "ARENA"
+      "parent_zone": "ARENA",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "used_weapon_area",
+        "ARENA_idle5",
+        "ARENA_idle3"
+      ],
+      "accessible_adjacent_zone":[
+        "ARENA_idle5",
+        "ARENA_idle3"
+      ],
+      "touch_only_adjacent_zone": [
+        "used_weapon_area"
+      ]
     },
     {
       "name": "ARENA_idle5",
@@ -404,21 +746,33 @@
       "y_min": 9500,
       "y_max": 12000,
       "R2_access": true,
-      "parent_zone": "ARENA"
+      "parent_zone": "ARENA",
+      "sub_zones": null,
+      "adjacent_zone": [
+        "tic_tac_toe_rack",
+        "used_weapon_area",
+        "ARENA_idle4",
+        "wall"
+      ],
+      "accessible_adjacent_zone":[
+        "ARENA_idle4"
+      ],
+      "touch_only_adjacent_zone": [
+        "tic_tac_toe_rack"
+      ]
     },
     {
       "name": "ARENA",
-      "x_min": 0,
-      "x_max": 6000,
-      "y_min": 9500,
-      "y_max": 12000,
-      "R2_access": true,
       "parent_zone": null,
       "sub_zones": [
-        "retry_zone",
-        "used_weapon_area",
-        "tic_tac_toe_rack",
+        "retry_zone","used_weapon_area","tic_tac_toe_rack",
         "ARENA_idle1","ARENA_idle2","ARENA_idle3","ARENA_idle4","ARENA_idle5"
+      ],
+      "adjacent_zone": [
+        "wall", "ramp"
+      ],
+      "accessible_adjacent_zone":[
+        "ramp"
       ]
     }
   ]

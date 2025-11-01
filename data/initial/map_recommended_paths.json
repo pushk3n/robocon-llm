@@ -1,0 +1,101 @@
+[
+    {
+        "start": "R2_start_zone",
+        "end": "F8",
+        "path_type": "shortest_accessible",
+        "path": [
+            "R2_start_zone",
+            "MC_idle4",
+            "R2_EN_zone",
+            "F2",
+            "F5",
+            "F8"
+        ],
+        "length": 5,
+        "notes": "核心穿越"
+    },
+    {
+        "start": "R1_start_zone",
+        "end": "R2_EN_zone",
+        "path_type": "shortest_accessible",
+        "path": [
+            "R1_start_zone",
+            "MC_idle2",
+            "R2_EN_zone"
+        ],
+        "length": 2,
+        "notes": "跨MC区连接"
+    },
+    {
+        "start": "F1",
+        "end": "F12",
+        "path_type": "shortest_accessible",
+        "path": [
+            "F1",
+            "F2",
+            "F3",
+            "F6",
+            "F9",
+            "F12"
+        ],
+        "length": 5,
+        "notes": "森林对角线"
+    },
+    {
+        "start": "MC_idle1",
+        "end": "MC_idle6",
+        "path_type": "shortest_accessible",
+        "path": [
+            "MC_idle1",
+            "MC_idle2",
+            "R2_EN_zone",
+            "MC_idle5",
+            "MC_idle6"
+        ],
+        "length": 4,
+        "notes": "MC区长距离"
+    },
+    {
+        "start": "ARENA_idle1",
+        "end": "ARENA_idle5",
+        "path_type": "shortest_accessible",
+        "path": [
+            "ARENA_idle1",
+            "ARENA_idle2",
+            "ARENA_idle3",
+            "ARENA_idle4",
+            "ARENA_idle5"
+        ],
+        "length": 4,
+        "notes": "ARENA区穿越"
+    },
+    {
+        "start": "R2_EX_zone1",
+        "end": "retry_zone",
+        "path_type": "rule_mandatory_rule8",
+        "path": [
+            "R2_EX_zone1",
+            "ramp",
+            "ARENA_idle1",
+            "retry_zone"
+        ],
+        "length": 3,
+        "notes": "根据地图规则Rule 8, R2进入ARENA的强制路径"
+    },
+    {
+        "start": "MC_idle2",
+        "end": "staff_rack",
+        "path_type": "accessibility_check",
+        "path": "N/A",
+        "length": "N/A",
+        "notes": "测试: 终点 (staff_rack) R2_access: false"
+    },
+    {
+        "start": "spearhead_rack",
+        "end": "MC_idle6",
+        "path_type": "accessibility_check",
+        "path": "N/A",
+        "length": "N/A",
+        "notes": "测试: 起点 (spearhead_rack) R2_access: false"
+    }
+]

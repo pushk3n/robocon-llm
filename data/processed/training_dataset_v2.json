@@ -1,0 +1,2157 @@
+[
+  {
+    "instruction": "R1_start_zone区域的坐标范围是什么?",
+    "input": "",
+    "output": "R1_start_zone区域的坐标范围是:x轴从0到1000,y轴从0到1000。"
+  },
+  {
+    "instruction": "告诉我R1_start_zone的位置。",
+    "input": "",
+    "output": "R1_start_zone的位置是:x轴范围0-1000,y轴范围0-1000。"
+  },
+  {
+    "instruction": "R2_start_zone区域的坐标范围是什么?",
+    "input": "",
+    "output": "R2_start_zone区域的坐标范围是:x轴从4200到5000,y轴从0到800。"
+  },
+  {
+    "instruction": "告诉我R2_start_zone的位置。",
+    "input": "",
+    "output": "R2_start_zone的位置是:x轴范围4200-5000,y轴范围0-800。"
+  },
+  {
+    "instruction": "staff_rack区域的坐标范围是什么?",
+    "input": "",
+    "output": "staff_rack区域的坐标范围是:x轴从2200到3000,y轴从0到300。"
+  },
+  {
+    "instruction": "告诉我staff_rack的位置。",
+    "input": "",
+    "output": "staff_rack的位置是:x轴范围2200-3000,y轴范围0-300。"
+  },
+  {
+    "instruction": "spearhead_rack区域的坐标范围是什么?",
+    "input": "",
+    "output": "spearhead_rack区域的坐标范围是:x轴从5875到6000,y轴从350到1550。"
+  },
+  {
+    "instruction": "告诉我spearhead_rack的位置。",
+    "input": "",
+    "output": "spearhead_rack的位置是:x轴范围5875-6000,y轴范围350-1550。"
+  },
+  {
+    "instruction": "MC_idle1区域的坐标范围是什么?",
+    "input": "",
+    "output": "MC_idle1区域的坐标范围是:x轴从0到1000,y轴从1000到2000。"
+  },
+  {
+    "instruction": "告诉我MC_idle1的位置。",
+    "input": "",
+    "output": "MC_idle1的位置是:x轴范围0-1000,y轴范围1000-2000。"
+  },
+  {
+    "instruction": "MC_idle2区域的坐标范围是什么?",
+    "input": "",
+    "output": "MC_idle2区域的坐标范围是:x轴从1000到2200,y轴从0到2000。"
+  },
+  {
+    "instruction": "告诉我MC_idle2的位置。",
+    "input": "",
+    "output": "MC_idle2的位置是:x轴范围1000-2200,y轴范围0-2000。"
+  },
+  {
+    "instruction": "MC_idle3区域的坐标范围是什么?",
+    "input": "",
+    "output": "MC_idle3区域的坐标范围是:x轴从2200到3000,y轴从300到2000。"
+  },
+  {
+    "instruction": "告诉我MC_idle3的位置。",
+    "input": "",
+    "output": "MC_idle3的位置是:x轴范围2200-3000,y轴范围300-2000。"
+  },
+  {
+    "instruction": "MC_idle4区域的坐标范围是什么?",
+    "input": "",
+    "output": "MC_idle4区域的坐标范围是:x轴从3000到4200,y轴从0到2000。"
+  },
+  {
+    "instruction": "告诉我MC_idle4的位置。",
+    "input": "",
+    "output": "MC_idle4的位置是:x轴范围3000-4200,y轴范围0-2000。"
+  },
+  {
+    "instruction": "MC_idle5区域的坐标范围是什么?",
+    "input": "",
+    "output": "MC_idle5区域的坐标范围是:x轴从4200到5000,y轴从800到2000。"
+  },
+  {
+    "instruction": "告诉我MC_idle5的位置。",
+    "input": "",
+    "output": "MC_idle5的位置是:x轴范围4200-5000,y轴范围800-2000。"
+  },
+  {
+    "instruction": "MC_idle6区域的坐标范围是什么?",
+    "input": "",
+    "output": "MC_idle6区域的坐标范围是:x轴从5000到5875,y轴从0到2000。"
+  },
+  {
+    "instruction": "告诉我MC_idle6的位置。",
+    "input": "",
+    "output": "MC_idle6的位置是:x轴范围5000-5875,y轴范围0-2000。"
+  },
+  {
+    "instruction": "MC区域的坐标范围是什么?",
+    "input": "",
+    "output": "MC区域的坐标范围是:x轴从0到6000,y轴从0到2000。"
+  },
+  {
+    "instruction": "告诉我MC的位置。",
+    "input": "",
+    "output": "MC的位置是:x轴范围0-6000,y轴范围0-2000。"
+  },
+  {
+    "instruction": "R2_EN_zone区域的坐标范围是什么?",
+    "input": "",
+    "output": "R2_EN_zone区域的坐标范围是:x轴从1200到4800,y轴从2000到3200。"
+  },
+  {
+    "instruction": "告诉我R2_EN_zone的位置。",
+    "input": "",
+    "output": "R2_EN_zone的位置是:x轴范围1200-4800,y轴范围2000-3200。"
+  },
+  {
+    "instruction": "R2_EX_zone1区域的坐标范围是什么?",
+    "input": "",
+    "output": "R2_EX_zone1区域的坐标范围是:x轴从0到1500,y轴从8000到9300。"
+  },
+  {
+    "instruction": "告诉我R2_EX_zone1的位置。",
+    "input": "",
+    "output": "R2_EX_zone1的位置是:x轴范围0-1500,y轴范围8000-9300。"
+  },
+  {
+    "instruction": "R2_EX_zone2区域的坐标范围是什么?",
+    "input": "",
+    "output": "R2_EX_zone2区域的坐标范围是:x轴从1500到4800,y轴从8000到9440。"
+  },
+  {
+    "instruction": "告诉我R2_EX_zone2的位置。",
+    "input": "",
+    "output": "R2_EX_zone2的位置是:x轴范围1500-4800,y轴范围8000-9440。"
+  },
+  {
+    "instruction": "R1_path_1区域的坐标范围是什么?",
+    "input": "",
+    "output": "R1_path_1区域的坐标范围是:x轴从0到1200,y轴从2000到8000。"
+  },
+  {
+    "instruction": "告诉我R1_path_1的位置。",
+    "input": "",
+    "output": "R1_path_1的位置是:x轴范围0-1200,y轴范围2000-8000。"
+  },
+  {
+    "instruction": "R1_path_2区域的坐标范围是什么?",
+    "input": "",
+    "output": "R1_path_2区域的坐标范围是:x轴从4800到6000,y轴从2000到9440。"
+  },
+  {
+    "instruction": "告诉我R1_path_2的位置。",
+    "input": "",
+    "output": "R1_path_2的位置是:x轴范围4800-6000,y轴范围2000-9440。"
+  },
+  {
+    "instruction": "forest区域的坐标范围是什么?",
+    "input": "",
+    "output": "forest区域的坐标范围是:x轴从1200到4800,y轴从3200到8000。"
+  },
+  {
+    "instruction": "告诉我forest的位置。",
+    "input": "",
+    "output": "forest的位置是:x轴范围1200-4800,y轴范围3200-8000。"
+  },
+  {
+    "instruction": "F1区域的坐标范围是什么?",
+    "input": "",
+    "output": "F1区域的坐标范围是:x轴从1200到2400,y轴从3200到4400。"
+  },
+  {
+    "instruction": "告诉我F1的位置。",
+    "input": "",
+    "output": "F1的位置是:x轴范围1200-2400,y轴范围3200-4400。"
+  },
+  {
+    "instruction": "F2区域的坐标范围是什么?",
+    "input": "",
+    "output": "F2区域的坐标范围是:x轴从2400到3600,y轴从3200到4400。"
+  },
+  {
+    "instruction": "告诉我F2的位置。",
+    "input": "",
+    "output": "F2的位置是:x轴范围2400-3600,y轴范围3200-4400。"
+  },
+  {
+    "instruction": "F3区域的坐标范围是什么?",
+    "input": "",
+    "output": "F3区域的坐标范围是:x轴从3600到4800,y轴从3200到4400。"
+  },
+  {
+    "instruction": "告诉我F3的位置。",
+    "input": "",
+    "output": "F3的位置是:x轴范围3600-4800,y轴范围3200-4400。"
+  },
+  {
+    "instruction": "F4区域的坐标范围是什么?",
+    "input": "",
+    "output": "F4区域的坐标范围是:x轴从1200到2400,y轴从4400到5600。"
+  },
+  {
+    "instruction": "告诉我F4的位置。",
+    "input": "",
+    "output": "F4的位置是:x轴范围1200-2400,y轴范围4400-5600。"
+  },
+  {
+    "instruction": "F5区域的坐标范围是什么?",
+    "input": "",
+    "output": "F5区域的坐标范围是:x轴从2400到3600,y轴从4400到5600。"
+  },
+  {
+    "instruction": "告诉我F5的位置。",
+    "input": "",
+    "output": "F5的位置是:x轴范围2400-3600,y轴范围4400-5600。"
+  },
+  {
+    "instruction": "F6区域的坐标范围是什么?",
+    "input": "",
+    "output": "F6区域的坐标范围是:x轴从3600到4800,y轴从4400到5600。"
+  },
+  {
+    "instruction": "告诉我F6的位置。",
+    "input": "",
+    "output": "F6的位置是:x轴范围3600-4800,y轴范围4400-5600。"
+  },
+  {
+    "instruction": "F7区域的坐标范围是什么?",
+    "input": "",
+    "output": "F7区域的坐标范围是:x轴从1200到2400,y轴从5600到6800。"
+  },
+  {
+    "instruction": "告诉我F7的位置。",
+    "input": "",
+    "output": "F7的位置是:x轴范围1200-2400,y轴范围5600-6800。"
+  },
+  {
+    "instruction": "F8区域的坐标范围是什么?",
+    "input": "",
+    "output": "F8区域的坐标范围是:x轴从2400到3600,y轴从5600到6800。"
+  },
+  {
+    "instruction": "告诉我F8的位置。",
+    "input": "",
+    "output": "F8的位置是:x轴范围2400-3600,y轴范围5600-6800。"
+  },
+  {
+    "instruction": "F9区域的坐标范围是什么?",
+    "input": "",
+    "output": "F9区域的坐标范围是:x轴从3600到4800,y轴从5600到6800。"
+  },
+  {
+    "instruction": "告诉我F9的位置。",
+    "input": "",
+    "output": "F9的位置是:x轴范围3600-4800,y轴范围5600-6800。"
+  },
+  {
+    "instruction": "F10区域的坐标范围是什么?",
+    "input": "",
+    "output": "F10区域的坐标范围是:x轴从1200到2400,y轴从6800到8000。"
+  },
+  {
+    "instruction": "告诉我F10的位置。",
+    "input": "",
+    "output": "F10的位置是:x轴范围1200-2400,y轴范围6800-8000。"
+  },
+  {
+    "instruction": "F11区域的坐标范围是什么?",
+    "input": "",
+    "output": "F11区域的坐标范围是:x轴从2400到3600,y轴从6800到8000。"
+  },
+  {
+    "instruction": "告诉我F11的位置。",
+    "input": "",
+    "output": "F11的位置是:x轴范围2400-3600,y轴范围6800-8000。"
+  },
+  {
+    "instruction": "F12区域的坐标范围是什么?",
+    "input": "",
+    "output": "F12区域的坐标范围是:x轴从3600到4800,y轴从6800到8000。"
+  },
+  {
+    "instruction": "告诉我F12的位置。",
+    "input": "",
+    "output": "F12的位置是:x轴范围3600-4800,y轴范围6800-8000。"
+  },
+  {
+    "instruction": "MF区域的坐标范围是什么?",
+    "input": "",
+    "output": "MF区域的坐标范围是:x轴从0到6000,y轴从2000到9440。"
+  },
+  {
+    "instruction": "告诉我MF的位置。",
+    "input": "",
+    "output": "MF的位置是:x轴范围0-6000,y轴范围2000-9440。"
+  },
+  {
+    "instruction": "ramp区域的坐标范围是什么?",
+    "input": "",
+    "output": "ramp区域的坐标范围是:x轴从0到1500,y轴从9300到10800。"
+  },
+  {
+    "instruction": "告诉我ramp的位置。",
+    "input": "",
+    "output": "ramp的位置是:x轴范围0-1500,y轴范围9300-10800。"
+  },
+  {
+    "instruction": "wall区域的坐标范围是什么?",
+    "input": "",
+    "output": "wall区域的坐标范围是:x轴从1500到6000,y轴从9450到9500。"
+  },
+  {
+    "instruction": "告诉我wall的位置。",
+    "input": "",
+    "output": "wall的位置是:x轴范围1500-6000,y轴范围9450-9500。"
+  },
+  {
+    "instruction": "retry_zone区域的坐标范围是什么?",
+    "input": "",
+    "output": "retry_zone区域的坐标范围是:x轴从0到1000,y轴从11000到12000。"
+  },
+  {
+    "instruction": "告诉我retry_zone的位置。",
+    "input": "",
+    "output": "retry_zone的位置是:x轴范围0-1000,y轴范围11000-12000。"
+  },
+  {
+    "instruction": "used_weapon_area区域的坐标范围是什么?",
+    "input": "",
+    "output": "used_weapon_area区域的坐标范围是:x轴从3500到5000,y轴从9500到9800。"
+  },
+  {
+    "instruction": "告诉我used_weapon_area的位置。",
+    "input": "",
+    "output": "used_weapon_area的位置是:x轴范围3500-5000,y轴范围9500-9800。"
+  },
+  {
+    "instruction": "tic_tac_toe_rack区域的坐标范围是什么?",
+    "input": "",
+    "output": "tic_tac_toe_rack区域的坐标范围是:x轴从5865到6000,y轴从9940到11560。"
+  },
+  {
+    "instruction": "告诉我tic_tac_toe_rack的位置。",
+    "input": "",
+    "output": "tic_tac_toe_rack的位置是:x轴范围5865-6000,y轴范围9940-11560。"
+  },
+  {
+    "instruction": "ARENA_idle1区域的坐标范围是什么?",
+    "input": "",
+    "output": "ARENA_idle1区域的坐标范围是:x轴从0到1500,y轴从10800到11000。"
+  },
+  {
+    "instruction": "告诉我ARENA_idle1的位置。",
+    "input": "",
+    "output": "ARENA_idle1的位置是:x轴范围0-1500,y轴范围10800-11000。"
+  },
+  {
+    "instruction": "ARENA_idle2区域的坐标范围是什么?",
+    "input": "",
+    "output": "ARENA_idle2区域的坐标范围是:x轴从1000到1500,y轴从11000到12000。"
+  },
+  {
+    "instruction": "告诉我ARENA_idle2的位置。",
+    "input": "",
+    "output": "ARENA_idle2的位置是:x轴范围1000-1500,y轴范围11000-12000。"
+  },
+  {
+    "instruction": "ARENA_idle3区域的坐标范围是什么?",
+    "input": "",
+    "output": "ARENA_idle3区域的坐标范围是:x轴从1500到3500,y轴从9500到12000。"
+  },
+  {
+    "instruction": "告诉我ARENA_idle3的位置。",
+    "input": "",
+    "output": "ARENA_idle3的位置是:x轴范围1500-3500,y轴范围9500-12000。"
+  },
+  {
+    "instruction": "ARENA_idle4区域的坐标范围是什么?",
+    "input": "",
+    "output": "ARENA_idle4区域的坐标范围是:x轴从3500到5000,y轴从9800到12000。"
+  },
+  {
+    "instruction": "告诉我ARENA_idle4的位置。",
+    "input": "",
+    "output": "ARENA_idle4的位置是:x轴范围3500-5000,y轴范围9800-12000。"
+  },
+  {
+    "instruction": "ARENA_idle5区域的坐标范围是什么?",
+    "input": "",
+    "output": "ARENA_idle5区域的坐标范围是:x轴从5000到5865,y轴从9500到12000。"
+  },
+  {
+    "instruction": "告诉我ARENA_idle5的位置。",
+    "input": "",
+    "output": "ARENA_idle5的位置是:x轴范围5000-5865,y轴范围9500-12000。"
+  },
+  {
+    "instruction": "ARENA区域的坐标范围是什么?",
+    "input": "",
+    "output": "ARENA区域的坐标范围是:x轴从0到6000,y轴从9500到12000。"
+  },
+  {
+    "instruction": "告诉我ARENA的位置。",
+    "input": "",
+    "output": "ARENA的位置是:x轴范围0-6000,y轴范围9500-12000。"
+  },
+  {
+    "instruction": "R2机器人能否进入R1_start_zone区域?",
+    "input": "",
+    "output": "R2机器人可以进入R1_start_zone区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入R2_start_zone区域?",
+    "input": "",
+    "output": "R2机器人可以进入R2_start_zone区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入staff_rack区域?",
+    "input": "",
+    "output": "R2机器人不可以进入staff_rack区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入spearhead_rack区域?",
+    "input": "",
+    "output": "R2机器人不可以进入spearhead_rack区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入MC_idle1区域?",
+    "input": "",
+    "output": "R2机器人可以进入MC_idle1区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入MC_idle2区域?",
+    "input": "",
+    "output": "R2机器人可以进入MC_idle2区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入MC_idle3区域?",
+    "input": "",
+    "output": "R2机器人可以进入MC_idle3区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入MC_idle4区域?",
+    "input": "",
+    "output": "R2机器人可以进入MC_idle4区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入MC_idle5区域?",
+    "input": "",
+    "output": "R2机器人可以进入MC_idle5区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入MC_idle6区域?",
+    "input": "",
+    "output": "R2机器人可以进入MC_idle6区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入MC区域?",
+    "input": "",
+    "output": "R2机器人可以进入MC区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入R2_EN_zone区域?",
+    "input": "",
+    "output": "R2机器人可以进入R2_EN_zone区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入R2_EX_zone1区域?",
+    "input": "",
+    "output": "R2机器人可以进入R2_EX_zone1区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入R2_EX_zone2区域?",
+    "input": "",
+    "output": "R2机器人可以进入R2_EX_zone2区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入R1_path_1区域?",
+    "input": "",
+    "output": "R2机器人不可以进入R1_path_1区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入R1_path_2区域?",
+    "input": "",
+    "output": "R2机器人不可以进入R1_path_2区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入forest区域?",
+    "input": "",
+    "output": "R2机器人可以进入forest区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F1区域?",
+    "input": "",
+    "output": "R2机器人可以进入F1区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F2区域?",
+    "input": "",
+    "output": "R2机器人可以进入F2区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F3区域?",
+    "input": "",
+    "output": "R2机器人可以进入F3区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F4区域?",
+    "input": "",
+    "output": "R2机器人可以进入F4区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F5区域?",
+    "input": "",
+    "output": "R2机器人可以进入F5区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F6区域?",
+    "input": "",
+    "output": "R2机器人可以进入F6区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F7区域?",
+    "input": "",
+    "output": "R2机器人可以进入F7区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F8区域?",
+    "input": "",
+    "output": "R2机器人可以进入F8区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F9区域?",
+    "input": "",
+    "output": "R2机器人可以进入F9区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F10区域?",
+    "input": "",
+    "output": "R2机器人可以进入F10区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F11区域?",
+    "input": "",
+    "output": "R2机器人可以进入F11区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入F12区域?",
+    "input": "",
+    "output": "R2机器人可以进入F12区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入MF区域?",
+    "input": "",
+    "output": "R2机器人可以进入MF区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入ramp区域?",
+    "input": "",
+    "output": "R2机器人可以进入ramp区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入wall区域?",
+    "input": "",
+    "output": "R2机器人不可以进入wall区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入retry_zone区域?",
+    "input": "",
+    "output": "R2机器人可以进入retry_zone区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入used_weapon_area区域?",
+    "input": "",
+    "output": "R2机器人不可以进入used_weapon_area区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入tic_tac_toe_rack区域?",
+    "input": "",
+    "output": "R2机器人不可以进入tic_tac_toe_rack区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入ARENA_idle1区域?",
+    "input": "",
+    "output": "R2机器人可以进入ARENA_idle1区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入ARENA_idle2区域?",
+    "input": "",
+    "output": "R2机器人可以进入ARENA_idle2区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入ARENA_idle3区域?",
+    "input": "",
+    "output": "R2机器人可以进入ARENA_idle3区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入ARENA_idle4区域?",
+    "input": "",
+    "output": "R2机器人可以进入ARENA_idle4区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入ARENA_idle5区域?",
+    "input": "",
+    "output": "R2机器人可以进入ARENA_idle5区域。"
+  },
+  {
+    "instruction": "R2机器人能否进入ARENA区域?",
+    "input": "",
+    "output": "R2机器人可以进入ARENA区域。"
+  },
+  {
+    "instruction": "列出R2机器人不能进入的所有区域。",
+    "input": "",
+    "output": "R2机器人不能进入的区域包括: staff_rack, spearhead_rack, R1_path_1, R1_path_2, wall, used_weapon_area, tic_tac_toe_rack。"
+  },
+  {
+    "instruction": "R2机器人可以进入哪些区域?",
+    "input": "",
+    "output": "R2机器人可以进入的区域有: R1_start_zone, R2_start_zone, MC_idle1, MC_idle2, MC_idle3, MC_idle4, MC_idle5, MC_idle6, MC, R2_EN_zone, R2_EX_zone1, R2_EX_zone2, forest, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, MF, ramp, retry_zone, ARENA_idle1, ARENA_idle2, ARENA_idle3, ARENA_idle4, ARENA_idle5, ARENA。"
+  },
+  {
+    "instruction": "坐标点(500, 500)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(500, 500)位于R1_start_zone区域。"
+  },
+  {
+    "instruction": "坐标点(4600, 400)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(4600, 400)位于R2_start_zone区域。"
+  },
+  {
+    "instruction": "坐标点(2600, 150)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(2600, 150)位于staff_rack区域。"
+  },
+  {
+    "instruction": "坐标点(5937, 950)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(5937, 950)位于spearhead_rack区域。"
+  },
+  {
+    "instruction": "坐标点(500, 1500)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(500, 1500)位于MC_idle1区域。"
+  },
+  {
+    "instruction": "坐标点(1600, 1000)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(1600, 1000)位于MC_idle2区域。"
+  },
+  {
+    "instruction": "坐标点(2600, 1150)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(2600, 1150)位于MC_idle3区域。"
+  },
+  {
+    "instruction": "坐标点(3600, 1000)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3600, 1000)位于MC_idle4区域。"
+  },
+  {
+    "instruction": "坐标点(4600, 1400)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(4600, 1400)位于MC_idle5区域。"
+  },
+  {
+    "instruction": "坐标点(5437, 1000)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(5437, 1000)位于MC_idle6区域。"
+  },
+  {
+    "instruction": "坐标点(3000, 1000)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3000, 1000)位于MC区域。"
+  },
+  {
+    "instruction": "坐标点(3000, 2600)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3000, 2600)位于R2_EN_zone区域。"
+  },
+  {
+    "instruction": "坐标点(750, 8650)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(750, 8650)位于R2_EX_zone1区域。"
+  },
+  {
+    "instruction": "坐标点(3150, 8720)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3150, 8720)位于R2_EX_zone2区域。"
+  },
+  {
+    "instruction": "坐标点(600, 5000)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(600, 5000)位于R1_path_1区域。"
+  },
+  {
+    "instruction": "坐标点(5400, 5720)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(5400, 5720)位于R1_path_2区域。"
+  },
+  {
+    "instruction": "坐标点(3000, 5600)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3000, 5600)位于forest区域。"
+  },
+  {
+    "instruction": "坐标点(1800, 3800)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(1800, 3800)位于F1区域。"
+  },
+  {
+    "instruction": "坐标点(3000, 3800)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3000, 3800)位于F2区域。"
+  },
+  {
+    "instruction": "坐标点(4200, 3800)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(4200, 3800)位于F3区域。"
+  },
+  {
+    "instruction": "坐标点(1800, 5000)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(1800, 5000)位于F4区域。"
+  },
+  {
+    "instruction": "坐标点(3000, 5000)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3000, 5000)位于F5区域。"
+  },
+  {
+    "instruction": "坐标点(4200, 5000)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(4200, 5000)位于F6区域。"
+  },
+  {
+    "instruction": "坐标点(1800, 6200)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(1800, 6200)位于F7区域。"
+  },
+  {
+    "instruction": "坐标点(3000, 6200)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3000, 6200)位于F8区域。"
+  },
+  {
+    "instruction": "坐标点(4200, 6200)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(4200, 6200)位于F9区域。"
+  },
+  {
+    "instruction": "坐标点(1800, 7400)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(1800, 7400)位于F10区域。"
+  },
+  {
+    "instruction": "坐标点(3000, 7400)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3000, 7400)位于F11区域。"
+  },
+  {
+    "instruction": "坐标点(4200, 7400)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(4200, 7400)位于F12区域。"
+  },
+  {
+    "instruction": "坐标点(3000, 5720)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3000, 5720)位于MF区域。"
+  },
+  {
+    "instruction": "坐标点(750, 10050)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(750, 10050)位于ramp区域。"
+  },
+  {
+    "instruction": "坐标点(3750, 9475)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3750, 9475)位于wall区域。"
+  },
+  {
+    "instruction": "坐标点(500, 11500)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(500, 11500)位于retry_zone区域。"
+  },
+  {
+    "instruction": "坐标点(4250, 9650)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(4250, 9650)位于used_weapon_area区域。"
+  },
+  {
+    "instruction": "坐标点(5932, 10750)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(5932, 10750)位于tic_tac_toe_rack区域。"
+  },
+  {
+    "instruction": "坐标点(750, 10900)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(750, 10900)位于ARENA_idle1区域。"
+  },
+  {
+    "instruction": "坐标点(1250, 11500)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(1250, 11500)位于ARENA_idle2区域。"
+  },
+  {
+    "instruction": "坐标点(2500, 10750)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(2500, 10750)位于ARENA_idle3区域。"
+  },
+  {
+    "instruction": "坐标点(4250, 10900)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(4250, 10900)位于ARENA_idle4区域。"
+  },
+  {
+    "instruction": "坐标点(5432, 10750)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(5432, 10750)位于ARENA_idle5区域。"
+  },
+  {
+    "instruction": "坐标点(3000, 10750)位于哪个区域?",
+    "input": "",
+    "output": "坐标点(3000, 10750)位于ARENA区域。"
+  },
+  {
+    "instruction": "MC区域包含哪些子区域?",
+    "input": "",
+    "output": "MC区域包含以下子区域: R1_start_zone, R2_start_zone, staff_rack, spearhead_rack, MC_idle1, MC_idle2, MC_idle3, MC_idle4, MC_idle5, MC_idle6。"
+  },
+  {
+    "instruction": "forest区域包含哪些子区域?",
+    "input": "",
+    "output": "forest区域包含以下子区域: F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12。"
+  },
+  {
+    "instruction": "MF区域包含哪些子区域?",
+    "input": "",
+    "output": "MF区域包含以下子区域: R2_EN_zone, R2_EX_zone1, R2_EX_zone2, R1_path_1, R1_path_2, forest。"
+  },
+  {
+    "instruction": "ARENA区域包含哪些子区域?",
+    "input": "",
+    "output": "ARENA区域包含以下子区域: retry_zone, used_weapon_area, tic_tac_toe_rack, ARENA_idle1, ARENA_idle2, ARENA_idle3, ARENA_idle4, ARENA_idle5。"
+  },
+  {
+    "instruction": "R1_start_zone区域的父区域是什么?",
+    "input": "",
+    "output": "R1_start_zone区域的父区域是MC。"
+  },
+  {
+    "instruction": "R2_start_zone区域的父区域是什么?",
+    "input": "",
+    "output": "R2_start_zone区域的父区域是MC。"
+  },
+  {
+    "instruction": "staff_rack区域的父区域是什么?",
+    "input": "",
+    "output": "staff_rack区域的父区域是MC。"
+  },
+  {
+    "instruction": "spearhead_rack区域的父区域是什么?",
+    "input": "",
+    "output": "spearhead_rack区域的父区域是MC。"
+  },
+  {
+    "instruction": "MC_idle1区域的父区域是什么?",
+    "input": "",
+    "output": "MC_idle1区域的父区域是MC。"
+  },
+  {
+    "instruction": "MC_idle2区域的父区域是什么?",
+    "input": "",
+    "output": "MC_idle2区域的父区域是MC。"
+  },
+  {
+    "instruction": "MC_idle3区域的父区域是什么?",
+    "input": "",
+    "output": "MC_idle3区域的父区域是MC。"
+  },
+  {
+    "instruction": "MC_idle4区域的父区域是什么?",
+    "input": "",
+    "output": "MC_idle4区域的父区域是MC。"
+  },
+  {
+    "instruction": "MC_idle5区域的父区域是什么?",
+    "input": "",
+    "output": "MC_idle5区域的父区域是MC。"
+  },
+  {
+    "instruction": "MC_idle6区域的父区域是什么?",
+    "input": "",
+    "output": "MC_idle6区域的父区域是MC。"
+  },
+  {
+    "instruction": "R2_EN_zone区域的父区域是什么?",
+    "input": "",
+    "output": "R2_EN_zone区域的父区域是MF。"
+  },
+  {
+    "instruction": "R2_EX_zone1区域的父区域是什么?",
+    "input": "",
+    "output": "R2_EX_zone1区域的父区域是MF。"
+  },
+  {
+    "instruction": "R2_EX_zone2区域的父区域是什么?",
+    "input": "",
+    "output": "R2_EX_zone2区域的父区域是MF。"
+  },
+  {
+    "instruction": "R1_path_1区域的父区域是什么?",
+    "input": "",
+    "output": "R1_path_1区域的父区域是MF。"
+  },
+  {
+    "instruction": "R1_path_2区域的父区域是什么?",
+    "input": "",
+    "output": "R1_path_2区域的父区域是MF。"
+  },
+  {
+    "instruction": "forest区域的父区域是什么?",
+    "input": "",
+    "output": "forest区域的父区域是MF。"
+  },
+  {
+    "instruction": "F1区域的父区域是什么?",
+    "input": "",
+    "output": "F1区域的父区域是forest。"
+  },
+  {
+    "instruction": "F2区域的父区域是什么?",
+    "input": "",
+    "output": "F2区域的父区域是forest。"
+  },
+  {
+    "instruction": "F3区域的父区域是什么?",
+    "input": "",
+    "output": "F3区域的父区域是forest。"
+  },
+  {
+    "instruction": "F4区域的父区域是什么?",
+    "input": "",
+    "output": "F4区域的父区域是forest。"
+  },
+  {
+    "instruction": "F5区域的父区域是什么?",
+    "input": "",
+    "output": "F5区域的父区域是forest。"
+  },
+  {
+    "instruction": "F6区域的父区域是什么?",
+    "input": "",
+    "output": "F6区域的父区域是forest。"
+  },
+  {
+    "instruction": "F7区域的父区域是什么?",
+    "input": "",
+    "output": "F7区域的父区域是forest。"
+  },
+  {
+    "instruction": "F8区域的父区域是什么?",
+    "input": "",
+    "output": "F8区域的父区域是forest。"
+  },
+  {
+    "instruction": "F9区域的父区域是什么?",
+    "input": "",
+    "output": "F9区域的父区域是forest。"
+  },
+  {
+    "instruction": "F10区域的父区域是什么?",
+    "input": "",
+    "output": "F10区域的父区域是forest。"
+  },
+  {
+    "instruction": "F11区域的父区域是什么?",
+    "input": "",
+    "output": "F11区域的父区域是forest。"
+  },
+  {
+    "instruction": "F12区域的父区域是什么?",
+    "input": "",
+    "output": "F12区域的父区域是forest。"
+  },
+  {
+    "instruction": "retry_zone区域的父区域是什么?",
+    "input": "",
+    "output": "retry_zone区域的父区域是ARENA。"
+  },
+  {
+    "instruction": "used_weapon_area区域的父区域是什么?",
+    "input": "",
+    "output": "used_weapon_area区域的父区域是ARENA。"
+  },
+  {
+    "instruction": "tic_tac_toe_rack区域的父区域是什么?",
+    "input": "",
+    "output": "tic_tac_toe_rack区域的父区域是ARENA。"
+  },
+  {
+    "instruction": "ARENA_idle1区域的父区域是什么?",
+    "input": "",
+    "output": "ARENA_idle1区域的父区域是ARENA。"
+  },
+  {
+    "instruction": "ARENA_idle2区域的父区域是什么?",
+    "input": "",
+    "output": "ARENA_idle2区域的父区域是ARENA。"
+  },
+  {
+    "instruction": "ARENA_idle3区域的父区域是什么?",
+    "input": "",
+    "output": "ARENA_idle3区域的父区域是ARENA。"
+  },
+  {
+    "instruction": "ARENA_idle4区域的父区域是什么?",
+    "input": "",
+    "output": "ARENA_idle4区域的父区域是ARENA。"
+  },
+  {
+    "instruction": "ARENA_idle5区域的父区域是什么?",
+    "input": "",
+    "output": "ARENA_idle5区域的父区域是ARENA。"
+  },
+  {
+    "instruction": "F1区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F1区域的完整层级路径是: MF -> forest -> F1。"
+  },
+  {
+    "instruction": "F2区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F2区域的完整层级路径是: MF -> forest -> F2。"
+  },
+  {
+    "instruction": "F3区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F3区域的完整层级路径是: MF -> forest -> F3。"
+  },
+  {
+    "instruction": "F4区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F4区域的完整层级路径是: MF -> forest -> F4。"
+  },
+  {
+    "instruction": "F5区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F5区域的完整层级路径是: MF -> forest -> F5。"
+  },
+  {
+    "instruction": "F6区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F6区域的完整层级路径是: MF -> forest -> F6。"
+  },
+  {
+    "instruction": "F7区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F7区域的完整层级路径是: MF -> forest -> F7。"
+  },
+  {
+    "instruction": "F8区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F8区域的完整层级路径是: MF -> forest -> F8。"
+  },
+  {
+    "instruction": "F9区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F9区域的完整层级路径是: MF -> forest -> F9。"
+  },
+  {
+    "instruction": "F10区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F10区域的完整层级路径是: MF -> forest -> F10。"
+  },
+  {
+    "instruction": "F11区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F11区域的完整层级路径是: MF -> forest -> F11。"
+  },
+  {
+    "instruction": "F12区域的完整层级路径是什么?",
+    "input": "",
+    "output": "F12区域的完整层级路径是: MF -> forest -> F12。"
+  },
+  {
+    "instruction": "F1区域的高度等级是多少?",
+    "input": "",
+    "output": "F1区域的高度等级是400,属于mid类型。"
+  },
+  {
+    "instruction": "F2区域的高度等级是多少?",
+    "input": "",
+    "output": "F2区域的高度等级是200,属于low类型。"
+  },
+  {
+    "instruction": "F3区域的高度等级是多少?",
+    "input": "",
+    "output": "F3区域的高度等级是400,属于mid类型。"
+  },
+  {
+    "instruction": "F4区域的高度等级是多少?",
+    "input": "",
+    "output": "F4区域的高度等级是200,属于low类型。"
+  },
+  {
+    "instruction": "F5区域的高度等级是多少?",
+    "input": "",
+    "output": "F5区域的高度等级是400,属于mid类型。"
+  },
+  {
+    "instruction": "F6区域的高度等级是多少?",
+    "input": "",
+    "output": "F6区域的高度等级是600,属于high类型。"
+  },
+  {
+    "instruction": "F7区域的高度等级是多少?",
+    "input": "",
+    "output": "F7区域的高度等级是400,属于mid类型。"
+  },
+  {
+    "instruction": "F8区域的高度等级是多少?",
+    "input": "",
+    "output": "F8区域的高度等级是600,属于high类型。"
+  },
+  {
+    "instruction": "F9区域的高度等级是多少?",
+    "input": "",
+    "output": "F9区域的高度等级是400,属于mid类型。"
+  },
+  {
+    "instruction": "F10区域的高度等级是多少?",
+    "input": "",
+    "output": "F10区域的高度等级是200,属于low类型。"
+  },
+  {
+    "instruction": "F11区域的高度等级是多少?",
+    "input": "",
+    "output": "F11区域的高度等级是400,属于mid类型。"
+  },
+  {
+    "instruction": "F12区域的高度等级是多少?",
+    "input": "",
+    "output": "F12区域的高度等级是200,属于low类型。"
+  },
+  {
+    "instruction": "forest森林区域中,哪些格子是低地?",
+    "input": "",
+    "output": "forest森林区域中,低地格子有: F2, F4, F10, F12。"
+  },
+  {
+    "instruction": "forest森林区域中,哪些格子是中地?",
+    "input": "",
+    "output": "forest森林区域中,中地格子有: F1, F3, F5, F7, F9, F11。"
+  },
+  {
+    "instruction": "forest森林区域中,哪些格子是高地?",
+    "input": "",
+    "output": "forest森林区域中,高地格子有: F6, F8。"
+  },
+  {
+    "instruction": "地图规则rule1是什么?",
+    "input": "",
+    "output": "规则rule1是: 未被说明为\"R2不可以进入\"的区域默认为R2都可以进入, 但是明确说明了\"R2不可以进入\"的区域R2均不可进入."
+  },
+  {
+    "instruction": "地图规则rule2是什么?",
+    "input": "",
+    "output": "规则rule2是: 地图尺寸是 6000mm x 12000mm."
+  },
+  {
+    "instruction": "地图规则rule3是什么?",
+    "input": "",
+    "output": "规则rule3是: MC 包含 R1_start_zone, R2_start_zone, staff_rack, spearhead_rack, MC_idle1, MC_idle2, MC_idle3, MC_idle4, MC_idle5, MC_idle6 这些子区域."
+  },
+  {
+    "instruction": "地图规则rule4是什么?",
+    "input": "",
+    "output": "规则rule4是: R2机器人的二维尺寸是 800mm x 800mm."
+  },
+  {
+    "instruction": "地图规则rule5是什么?",
+    "input": "",
+    "output": "规则rule5是: MF 包含 R2_EN_zone, R2_EX_zone1, R2_EX_zone2, R1_path_1, R1_path_2, forest 这些子区域."
+  },
+  {
+    "instruction": "地图规则rule6是什么?",
+    "input": "",
+    "output": "规则rule6是: ARENA 包含 retry_zone, used_weapon_area, tic_tac_toe_rack, ARENA_idle1, ARENA_idle2, ARENA_idle3, ARENA_idle4, ARENA_idle5 这些子区域."
+  },
+  {
+    "instruction": "地图规则rule7是什么?",
+    "input": "",
+    "output": "规则rule7是: forest 由 F1 到 F12 这12个格子组成."
+  },
+  {
+    "instruction": "地图规则rule8是什么?",
+    "input": "",
+    "output": "规则rule8是: ramp是连接 MF 和 ARENA 的斜坡. 由于ramp的设计, 从 MF 进入 ARENA 时, 必须先经过 R2_EX_zone1、ramp、ARENA_idle1, 然后才能到达 retry_zone."
+  },
+  {
+    "instruction": "地图规则rule9是什么?",
+    "input": "",
+    "output": "规则rule9是: 必须站在 MC_idle6 区域, 才能 访问/触碰 到 spearhead_rack 上的物品(spearhead)."
+  },
+  {
+    "instruction": "地图规则rule10是什么?",
+    "input": "",
+    "output": "规则rule10是: 必须站在 MC_idle3 区域, 才能 访问/触碰 到 staff_rack物品(staff)."
+  },
+  {
+    "instruction": "地图规则rule11是什么?",
+    "input": "",
+    "output": "规则rule11是: 必须站在 ARENA_idle4 区域, 才能 访问/触碰 到 used_weapon_area."
+  },
+  {
+    "instruction": "地图规则rule12是什么?",
+    "input": "",
+    "output": "规则rule12是: 在所有R2不可进入的区域, R2只需要 访问/拿取 spearhead_rack 架子(rack) 上的 矛头(spearhead)."
+  },
+  {
+    "instruction": "地图规则rule13是什么?",
+    "input": "",
+    "output": "规则rule13是: 除了 spearhead_rack 区域之外, 任何R2不可进入的区域, R2全部都不可以进入, 不可以触碰."
+  },
+  {
+    "instruction": "地图规则rule14是什么?",
+    "input": "",
+    "output": "规则rule14是: R2必须从 R2_EX_zone1 或者 ARENA_idle1 进入 ramp."
+  },
+  {
+    "instruction": "地图规则rule15是什么?",
+    "input": "",
+    "output": "规则rule15是: R2不可以从 R2_EX_zone2 或者 ARENA_idle3 进入 ramp."
+  },
+  {
+    "instruction": "地图规则rule16是什么?",
+    "input": "",
+    "output": "规则rule16是: R2不可以进入 R1_path_1 , R1_path_2."
+  },
+  {
+    "instruction": "地图规则rule17是什么?",
+    "input": "",
+    "output": "规则rule17是: R2不能进入 R1_path_1 , R1_path_2."
+  },
+  {
+    "instruction": "地图规则rule18是什么?",
+    "input": "",
+    "output": "规则rule18是: R2绝对要从 R2_EX_zone1 或者 ARENA_idle1 进入 ramp."
+  },
+  {
+    "instruction": "地图规则rule19是什么?",
+    "input": "",
+    "output": "规则rule19是: R2不能从 R2_EX_zone2 或者 ARENA_idle3 进入 ramp."
+  },
+  {
+    "instruction": "R2机器人的默认访问权限是什么?",
+    "input": "",
+    "output": "未被标记为\"R2_access: false\"的区域默认为R2都可以进入, 但是明确标记了\"R2_access: false\"的区域R2均不可进入."
+  },
+  {
+    "instruction": "R2机器人如何从MF进入ARENA?",
+    "input": "",
+    "output": "根据规则(Rule 8), R2只能从R2_EX_zone1 (ID:13) 或 ARENA_idle1 (ID:36) 进入 ramp."
+  },
+  {
+    "instruction": "R2机器人如何从MF区域进入ARENA的路径是什么?",
+    "input": "",
+    "output": "根据规则(Rule 8), R2必须从R2_EX_zone1开始, 经过ramp和ARENA_idle1, 最终到达retry_zone。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EX_zone2进入ramp?",
+    "input": "",
+    "output": "不可以。根据规则(Rule 15), R2不可以从 R2_EX_zone2 或者 ARENA_idle3 进入 ramp。"
+  },
+  {
+    "instruction": "ARENA区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "ARENA区域与以下区域相邻: ramp。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA移动到ramp?",
+    "input": "",
+    "output": "不可以。根据规则(Rule 15), R2机器人不被允许从ARENA进入ramp。"
+  },
+  {
+    "instruction": "ARENA_idle1区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "ARENA_idle1区域与以下区域相邻: ARENA_idle2, ramp, retry_zone。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle1移动到ARENA_idle2?",
+    "input": "",
+    "output": "可以。ARENA_idle1和ARENA_idle2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle1移动到ramp?",
+    "input": "",
+    "output": "可以。ARENA_idle1和ramp是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle1移动到retry_zone?",
+    "input": "",
+    "output": "可以。ARENA_idle1和retry_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "ARENA_idle2区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "ARENA_idle2区域与以下区域相邻: ARENA_idle1, ARENA_idle3, retry_zone。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle2移动到ARENA_idle1?",
+    "input": "",
+    "output": "可以。ARENA_idle2和ARENA_idle1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle2移动到ARENA_idle3?",
+    "input": "",
+    "output": "可以。ARENA_idle2和ARENA_idle3是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle2移动到retry_zone?",
+    "input": "",
+    "output": "可以。ARENA_idle2和retry_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "ARENA_idle3区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "ARENA_idle3区域与以下区域相邻: ARENA_idle1, ARENA_idle2, ARENA_idle4, used_weapon_area。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle3移动到ARENA_idle1?",
+    "input": "",
+    "output": "可以。ARENA_idle3和ARENA_idle1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle3移动到ARENA_idle2?",
+    "input": "",
+    "output": "可以。ARENA_idle3和ARENA_idle2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle3移动到ARENA_idle4?",
+    "input": "",
+    "output": "可以。ARENA_idle3和ARENA_idle4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle3移动到used_weapon_area?",
+    "input": "",
+    "output": "不可以。虽然ARENA_idle3和used_weapon_area是相邻的, 但R2机器人被禁止进入used_weapon_area区域。"
+  },
+  {
+    "instruction": "ARENA_idle4区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "ARENA_idle4区域与以下区域相邻: ARENA_idle3, ARENA_idle5, used_weapon_area。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle4移动到ARENA_idle3?",
+    "input": "",
+    "output": "可以。ARENA_idle4和ARENA_idle3是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle4移动到ARENA_idle5?",
+    "input": "",
+    "output": "可以。ARENA_idle4和ARENA_idle5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle4移动到used_weapon_area?",
+    "input": "",
+    "output": "不可以。虽然ARENA_idle4和used_weapon_area是相邻的, 但R2机器人被禁止进入used_weapon_area区域。"
+  },
+  {
+    "instruction": "ARENA_idle5区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "ARENA_idle5区域与以下区域相邻: ARENA_idle4, tic_tac_toe_rack, used_weapon_area。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle5移动到ARENA_idle4?",
+    "input": "",
+    "output": "可以。ARENA_idle5和ARENA_idle4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle5移动到tic_tac_toe_rack?",
+    "input": "",
+    "output": "不可以。虽然ARENA_idle5和tic_tac_toe_rack是相邻的, 但R2机器人被禁止进入tic_tac_toe_rack区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ARENA_idle5移动到used_weapon_area?",
+    "input": "",
+    "output": "不可以。虽然ARENA_idle5和used_weapon_area是相邻的, 但R2机器人被禁止进入used_weapon_area区域。"
+  },
+  {
+    "instruction": "F1区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F1区域与以下区域相邻: F2, F4。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F1移动到F2?",
+    "input": "",
+    "output": "可以。F1和F2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F1移动到F4?",
+    "input": "",
+    "output": "可以。F1和F4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F10区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F10区域与以下区域相邻: F11, F7, R2_EX_zone2, R2_EX_zone1。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F10移动到F11?",
+    "input": "",
+    "output": "可以。F10和F11是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F10移动到F7?",
+    "input": "",
+    "output": "可以。F10和F7是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F10移动到R2_EX_zone2?",
+    "input": "",
+    "output": "可以。F10和R2_EX_zone2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F10移动到R2_EX_zone1?",
+    "input": "",
+    "output": "可以。F10和R2_EX_zone1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F11区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F11区域与以下区域相邻: F10, F12, F8。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F11移动到F10?",
+    "input": "",
+    "output": "可以。F11和F10是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F11移动到F12?",
+    "input": "",
+    "output": "可以。F11和F12是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F11移动到F8?",
+    "input": "",
+    "output": "可以。F11和F8是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F12区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F12区域与以下区域相邻: F11, F9, R2_EX_zone2。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F12移动到F11?",
+    "input": "",
+    "output": "可以。F12和F11是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F12移动到F9?",
+    "input": "",
+    "output": "可以。F12和F9是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F12移动到R2_EX_zone2?",
+    "input": "",
+    "output": "可以。F12和R2_EX_zone2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F2区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F2区域与以下区域相邻: F1, F3, F5, R2_EN_zone。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F2移动到F1?",
+    "input": "",
+    "output": "可以。F2和F1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F2移动到F3?",
+    "input": "",
+    "output": "可以。F2和F3是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F2移动到F5?",
+    "input": "",
+    "output": "可以。F2和F5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F2移动到R2_EN_zone?",
+    "input": "",
+    "output": "可以。F2和R2_EN_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F3区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F3区域与以下区域相邻: F2, F6。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F3移动到F2?",
+    "input": "",
+    "output": "可以。F3和F2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F3移动到F6?",
+    "input": "",
+    "output": "可以。F3和F6是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F4区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F4区域与以下区域相邻: F1, F5, F7。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F4移动到F1?",
+    "input": "",
+    "output": "可以。F4和F1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F4移动到F5?",
+    "input": "",
+    "output": "可以。F4和F5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F4移动到F7?",
+    "input": "",
+    "output": "可以。F4和F7是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F5区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F5区域与以下区域相邻: F2, F4, F6, F8。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F5移动到F2?",
+    "input": "",
+    "output": "可以。F5和F2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F5移动到F4?",
+    "input": "",
+    "output": "可以。F5和F4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F5移动到F6?",
+    "input": "",
+    "output": "可以。F5和F6是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F5移动到F8?",
+    "input": "",
+    "output": "可以。F5和F8是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F6区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F6区域与以下区域相邻: F3, F5, F9。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F6移动到F3?",
+    "input": "",
+    "output": "可以。F6和F3是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F6移动到F5?",
+    "input": "",
+    "output": "可以。F6和F5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F6移动到F9?",
+    "input": "",
+    "output": "可以。F6和F9是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F7区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F7区域与以下区域相邻: F10, F4, F8。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F7移动到F10?",
+    "input": "",
+    "output": "可以。F7和F10是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F7移动到F4?",
+    "input": "",
+    "output": "可以。F7和F4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F7移动到F8?",
+    "input": "",
+    "output": "可以。F7和F8是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F8区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F8区域与以下区域相邻: F11, F5, F7, F9。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F8移动到F11?",
+    "input": "",
+    "output": "可以。F8和F11是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F8移动到F5?",
+    "input": "",
+    "output": "可以。F8和F5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F8移动到F7?",
+    "input": "",
+    "output": "可以。F8和F7是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F8移动到F9?",
+    "input": "",
+    "output": "可以。F8和F9是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "F9区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "F9区域与以下区域相邻: F12, F6, F8。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F9移动到F12?",
+    "input": "",
+    "output": "可以。F9和F12是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F9移动到F6?",
+    "input": "",
+    "output": "可以。F9和F6是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从F9移动到F8?",
+    "input": "",
+    "output": "可以。F9和F8是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "MC区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "MC区域与以下区域相邻: MF, R2_EN_zone。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC移动到MF?",
+    "input": "",
+    "output": "可以。MC和MF是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC移动到R2_EN_zone?",
+    "input": "",
+    "output": "可以。MC和R2_EN_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "MC_idle1区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "MC_idle1区域与以下区域相邻: MC_idle2, R1_start_zone。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle1移动到MC_idle2?",
+    "input": "",
+    "output": "可以。MC_idle1和MC_idle2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle1移动到R1_start_zone?",
+    "input": "",
+    "output": "可以。MC_idle1和R1_start_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "MC_idle2区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "MC_idle2区域与以下区域相邻: R1_start_zone, MC_idle1, MC_idle3, R2_EN_zone, staff_rack。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle2移动到R1_start_zone?",
+    "input": "",
+    "output": "可以。MC_idle2和R1_start_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle2移动到MC_idle1?",
+    "input": "",
+    "output": "可以。MC_idle2和MC_idle1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle2移动到MC_idle3?",
+    "input": "",
+    "output": "可以。MC_idle2和MC_idle3是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle2移动到R2_EN_zone?",
+    "input": "",
+    "output": "可以。MC_idle2和R2_EN_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle2移动到staff_rack?",
+    "input": "",
+    "output": "不可以。虽然MC_idle2和staff_rack是相邻的, 但R2机器人被禁止进入staff_rack区域。"
+  },
+  {
+    "instruction": "MC_idle3区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "MC_idle3区域与以下区域相邻: MC_idle2, MC_idle4, R2_EN_zone, staff_rack。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle3移动到MC_idle2?",
+    "input": "",
+    "output": "可以。MC_idle3和MC_idle2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle3移动到MC_idle4?",
+    "input": "",
+    "output": "可以。MC_idle3和MC_idle4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle3移动到R2_EN_zone?",
+    "input": "",
+    "output": "可以。MC_idle3和R2_EN_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle3移动到staff_rack?",
+    "input": "",
+    "output": "不可以。虽然MC_idle3和staff_rack是相邻的, 但R2机器人被禁止进入staff_rack区域。"
+  },
+  {
+    "instruction": "MC_idle4区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "MC_idle4区域与以下区域相邻: MC_idle3, MC_idle5, R2_EN_zone, R2_start_zone, staff_rack。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle4移动到MC_idle3?",
+    "input": "",
+    "output": "可以。MC_idle4和MC_idle3是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle4移动到MC_idle5?",
+    "input": "",
+    "output": "可以。MC_idle4和MC_idle5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle4移动到R2_EN_zone?",
+    "input": "",
+    "output": "可以。MC_idle4和R2_EN_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle4移动到R2_start_zone?",
+    "input": "",
+    "output": "可以。MC_idle4和R2_start_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle4移动到staff_rack?",
+    "input": "",
+    "output": "不可以。虽然MC_idle4和staff_rack是相邻的, 但R2机器人被禁止进入staff_rack区域。"
+  },
+  {
+    "instruction": "MC_idle5区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "MC_idle5区域与以下区域相邻: MC_idle4, MC_idle6, R2_EN_zone, R2_start_zone。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle5移动到MC_idle4?",
+    "input": "",
+    "output": "可以。MC_idle5和MC_idle4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle5移动到MC_idle6?",
+    "input": "",
+    "output": "可以。MC_idle5和MC_idle6是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle5移动到R2_EN_zone?",
+    "input": "",
+    "output": "可以。MC_idle5和R2_EN_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle5移动到R2_start_zone?",
+    "input": "",
+    "output": "可以。MC_idle5和R2_start_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "MC_idle6区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "MC_idle6区域与以下区域相邻: R2_start_zone, MC_idle5, spearhead_rack。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle6移动到R2_start_zone?",
+    "input": "",
+    "output": "可以。MC_idle6和R2_start_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle6移动到MC_idle5?",
+    "input": "",
+    "output": "可以。MC_idle6和MC_idle5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MC_idle6移动到spearhead_rack?",
+    "input": "",
+    "output": "不可以。虽然MC_idle6和spearhead_rack是相邻的, 但R2机器人被禁止进入spearhead_rack区域。"
+  },
+  {
+    "instruction": "MF区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "MF区域与以下区域相邻: MC_idle2, MC_idle3, MC_idle4, MC_idle5。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MF移动到MC_idle2?",
+    "input": "",
+    "output": "可以。MF和MC_idle2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MF移动到MC_idle3?",
+    "input": "",
+    "output": "可以。MF和MC_idle3是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MF移动到MC_idle4?",
+    "input": "",
+    "output": "可以。MF和MC_idle4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从MF移动到MC_idle5?",
+    "input": "",
+    "output": "可以。MF和MC_idle5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R1_start_zone区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "R1_start_zone区域与以下区域相邻: MC_idle1, MC_idle2。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R1_start_zone移动到MC_idle1?",
+    "input": "",
+    "output": "可以。R1_start_zone和MC_idle1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R1_start_zone移动到MC_idle2?",
+    "input": "",
+    "output": "可以。R1_start_zone和MC_idle2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2_EN_zone区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "R2_EN_zone区域与以下区域相邻: F2, MC_idle2, MC_idle3, MC_idle4, MC_idle5, forest。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EN_zone移动到F2?",
+    "input": "",
+    "output": "可以。R2_EN_zone和F2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EN_zone移动到MC_idle2?",
+    "input": "",
+    "output": "可以。R2_EN_zone和MC_idle2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EN_zone移动到MC_idle3?",
+    "input": "",
+    "output": "可以。R2_EN_zone和MC_idle3是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EN_zone移动到MC_idle4?",
+    "input": "",
+    "output": "可以。R2_EN_zone和MC_idle4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EN_zone移动到MC_idle5?",
+    "input": "",
+    "output": "可以。R2_EN_zone和MC_idle5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EN_zone移动到forest?",
+    "input": "",
+    "output": "可以。R2_EN_zone和forest是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2_EX_zone1区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "R2_EX_zone1区域与以下区域相邻: ramp, R2_EX_zone2。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EX_zone1移动到ramp?",
+    "input": "",
+    "output": "可以。R2_EX_zone1和ramp是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EX_zone1移动到R2_EX_zone2?",
+    "input": "",
+    "output": "可以。R2_EX_zone1和R2_EX_zone2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2_EX_zone2区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "R2_EX_zone2区域与以下区域相邻: F10, F12, R2_EX_zone1。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EX_zone2移动到F10?",
+    "input": "",
+    "output": "可以。R2_EX_zone2和F10是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EX_zone2移动到F12?",
+    "input": "",
+    "output": "可以。R2_EX_zone2和F12是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_EX_zone2移动到R2_EX_zone1?",
+    "input": "",
+    "output": "可以。R2_EX_zone2和R2_EX_zone1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2_start_zone区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "R2_start_zone区域与以下区域相邻: MC_idle4, MC_idle5, MC_idle6。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_start_zone移动到MC_idle4?",
+    "input": "",
+    "output": "可以。R2_start_zone和MC_idle4是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_start_zone移动到MC_idle5?",
+    "input": "",
+    "output": "可以。R2_start_zone和MC_idle5是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从R2_start_zone移动到MC_idle6?",
+    "input": "",
+    "output": "可以。R2_start_zone和MC_idle6是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "forest区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "forest区域与以下区域相邻: R2_EN_zone, R2_EX_zone1, R2_EX_zone2。"
+  },
+  {
+    "instruction": "R2机器人是否可以从forest移动到R2_EN_zone?",
+    "input": "",
+    "output": "可以。forest和R2_EN_zone是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从forest移动到R2_EX_zone1?",
+    "input": "",
+    "output": "可以。forest和R2_EX_zone1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从forest移动到R2_EX_zone2?",
+    "input": "",
+    "output": "可以。forest和R2_EX_zone2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "ramp区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "ramp区域与以下区域相邻: ARENA, ARENA_idle1, R2_EX_zone1。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ramp移动到ARENA?",
+    "input": "",
+    "output": "不可以。根据规则(Rule 15), R2机器人不被允许从ramp移动到ARENA。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ramp移动到ARENA_idle1?",
+    "input": "",
+    "output": "可以。ramp和ARENA_idle1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从ramp移动到R2_EX_zone1?",
+    "input": "",
+    "output": "可以。ramp和R2_EX_zone1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "retry_zone区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "retry_zone区域与以下区域相邻: ARENA_idle1, ARENA_idle2。"
+  },
+  {
+    "instruction": "R2机器人是否可以从retry_zone移动到ARENA_idle1?",
+    "input": "",
+    "output": "可以。retry_zone和ARENA_idle1是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "R2机器人是否可以从retry_zone移动到ARENA_idle2?",
+    "input": "",
+    "output": "可以。retry_zone和ARENA_idle2是相邻的, 并且R2机器人可以进入这两个区域。"
+  },
+  {
+    "instruction": "spearhead_rack区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "spearhead_rack区域与以下区域相邻: MC_idle6。"
+  },
+  {
+    "instruction": "R2机器人是否可以从spearhead_rack移动到MC_idle6?",
+    "input": "",
+    "output": "不可以。R2机器人无法进入出发区域spearhead_rack。"
+  },
+  {
+    "instruction": "staff_rack区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "staff_rack区域与以下区域相邻: MC_idle3。"
+  },
+  {
+    "instruction": "R2机器人是否可以从staff_rack移动到MC_idle3?",
+    "input": "",
+    "output": "不可以。R2机器人无法进入出发区域staff_rack。"
+  },
+  {
+    "instruction": "tic_tac_toe_rack区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "tic_tac_toe_rack区域与以下区域相邻: ARENA_idle5。"
+  },
+  {
+    "instruction": "R2机器人是否可以从tic_tac_toe_rack移动到ARENA_idle5?",
+    "input": "",
+    "output": "不可以。R2机器人无法进入出发区域tic_tac_toe_rack。"
+  },
+  {
+    "instruction": "used_weapon_area区域和哪些区域是相邻的?",
+    "input": "",
+    "output": "used_weapon_area区域与以下区域相邻: ARENA_idle4。"
+  },
+  {
+    "instruction": "R2机器人是否可以从used_weapon_area移动到ARENA_idle4?",
+    "input": "",
+    "output": "不可以。R2机器人无法进入出发区域used_weapon_area。"
+  },
+  {
+    "instruction": "R2机器人从R2_start_zone到F8的最短路径是什么?",
+    "input": "",
+    "output": "从R2_start_zone到F8的最短路径是: R2_start_zone -> MC_idle4 -> R2_EN_zone -> F2 -> F5 -> F8。"
+  },
+  {
+    "instruction": "R2机器人从R2_EN_zone到F12的最短路径是什么?",
+    "input": "",
+    "output": "从R2_EN_zone到F12的最短路径是: R2_EN_zone -> forest -> R2_EX_zone2 -> F12。"
+  },
+  {
+    "instruction": "R2机器人从MC_idle1到MC_idle5的最短路径是什么?",
+    "input": "",
+    "output": "从MC_idle1到MC_idle5的最短路径是: MC_idle1 -> MC_idle2 -> R2_EN_zone -> MC_idle5。"
+  },
+  {
+    "instruction": "R2机器人从F1到F12的最短路径是什么?",
+    "input": "",
+    "output": "从F1到F12的最短路径是: F1 -> F2 -> F3 -> F6 -> F9 -> F12。"
+  },
+  {
+    "instruction": "R2机器人从ARENA_idle1到ARENA_idle5的最短路径是什么?",
+    "input": "",
+    "output": "从ARENA_idle1到ARENA_idle5的最短路径是: ARENA_idle1 -> ARENA_idle2 -> ARENA_idle3 -> ARENA_idle4 -> ARENA_idle5。"
+  },
+  {
+    "instruction": "R2机器人如何从R2_EX_zone1移动到retry_zone?",
+    "input": "",
+    "output": "R2机器人必须按此路径移动: R2_EX_zone1 -> ramp -> ARENA_idle1 -> retry_zone。这符合Rule 8/14, 从R2_EX_zone1进入ramp。"
+  },
+  {
+    "instruction": "R2机器人如何从ARENA_idle1移动到R2_EX_zone1?",
+    "input": "",
+    "output": "R2机器人必须按此路径移动: ARENA_idle1 -> ramp -> R2_EX_zone1。这符合Rule 8/14, 从ARENA_idle1进入ramp。"
+  },
+  {
+    "instruction": "R2机器人能从R2_EX_zone2移动到retry_zone吗?",
+    "input": "",
+    "output": "不可以。R2_EX_zone2 -> R2_EX_zone1 -> ramp -> ARENA_idle1 -> retry_zone (根据Rule 15, R2不可以从R2_EX_zone2进入ramp, 无法规划路径)。"
+  },
+  {
+    "instruction": "R2机器人能从ARENA_idle3移动到R2_EX_zone1吗?",
+    "input": "",
+    "output": "不可以。ARENA_idle3 -> ARENA_idle1 -> ramp -> R2_EX_zone1 (根据Rule 15, R2不可以从ARENA_idle3进入ramp, 无法规划路径)。"
+  },
+  {
+    "instruction": "R2机器人从used_weapon_area到R2_start_zone的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入起始区域 used_weapon_area。"
+  },
+  {
+    "instruction": "R2机器人从R1_path_1到R2_start_zone的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入起始区域 R1_path_1。"
+  },
+  {
+    "instruction": "R2机器人从R1_path_2到R2_start_zone的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入起始区域 R1_path_2。"
+  },
+  {
+    "instruction": "R2机器人从spearhead_rack到R2_start_zone的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入起始区域 spearhead_rack。"
+  },
+  {
+    "instruction": "R2机器人从tic_tac_toe_rack到R2_start_zone的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入起始区域 tic_tac_toe_rack。"
+  },
+  {
+    "instruction": "R2机器人从wall到R2_start_zone的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入起始区域 wall。"
+  },
+  {
+    "instruction": "R2机器人从staff_rack到R2_start_zone的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入起始区域 staff_rack。"
+  },
+  {
+    "instruction": "R2机器人从R2_start_zone到used_weapon_area的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入目标区域 used_weapon_area。"
+  },
+  {
+    "instruction": "R2机器人从R2_start_zone到R1_path_1的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入目标区域 R1_path_1。"
+  },
+  {
+    "instruction": "R2机器人从R2_start_zone到R1_path_2的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入目标区域 R1_path_2。"
+  },
+  {
+    "instruction": "R2机器人从R2_start_zone到spearhead_rack的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入目标区域 spearhead_rack。"
+  },
+  {
+    "instruction": "R2机器人从R2_start_zone到tic_tac_toe_rack的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入目标区域 tic_tac_toe_rack。"
+  },
+  {
+    "instruction": "R2机器人从R2_start_zone到wall的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入目标区域 wall。"
+  },
+  {
+    "instruction": "R2机器人从R2_start_zone到staff_rack的路径是什么?",
+    "input": "",
+    "output": "R2机器人无法进入目标区域 staff_rack。"
+  },
+  {
+    "instruction": "R2机器人从R1_start_zone到R2_EX_zone1的最短路径是什么?",
+    "input": "",
+    "output": "R1_start_zone -> MC_idle2 -> R2_EN_zone -> forest -> R2_EX_zone1"
+  },
+  {
+    "instruction": "R2机器人从MC_idle5到R2_EX_zone2的最短路径是什么?",
+    "input": "",
+    "output": "MC_idle5 -> R2_EN_zone -> forest -> R2_EX_zone2"
+  }
+]

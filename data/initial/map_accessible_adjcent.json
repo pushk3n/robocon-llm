@@ -1,0 +1,316 @@
+[
+    {
+        "name": "ARENA",
+        "adjacent_zone": [
+            "ramp"
+        ]
+    },
+    {
+        "name": "ARENA_idle1",
+        "adjacent_zone": [
+            "ARENA_idle2",
+            "ramp",
+            "retry_zone"
+        ]
+    },
+    {
+        "name": "ARENA_idle2",
+        "adjacent_zone": [
+            "ARENA_idle1",
+            "ARENA_idle3",
+            "retry_zone"
+        ]
+    },
+    {
+        "name": "ARENA_idle3",
+        "adjacent_zone": [
+            "ARENA_idle1",
+            "ARENA_idle2",
+            "ARENA_idle4",
+            "used_weapon_area"
+        ]
+    },
+    {
+        "name": "ARENA_idle4",
+        "adjacent_zone": [
+            "ARENA_idle3",
+            "ARENA_idle5",
+            "used_weapon_area"
+        ]
+    },
+    {
+        "name": "ARENA_idle5",
+        "adjacent_zone": [
+            "ARENA_idle4",
+            "tic_tac_toe_rack",
+            "used_weapon_area"
+        ]
+    },
+    {
+        "name": "F1",
+        "adjacent_zone": [
+            "F2",
+            "F4"
+        ]
+    },
+    {
+        "name": "F10",
+        "adjacent_zone": [
+            "F11",
+            "F7",
+            "R2_EX_zone2",
+            "R2_EX_zone1"
+        ]
+    },
+    {
+        "name": "F11",
+        "adjacent_zone": [
+            "F10",
+            "F12",
+            "F8"
+        ]
+    },
+    {
+        "name": "F12",
+        "adjacent_zone": [
+            "F11",
+            "F9",
+            "R2_EX_zone2"
+        ]
+    },
+    {
+        "name": "F2",
+        "adjacent_zone": [
+            "F1",
+            "F3",
+            "F5",
+            "R2_EN_zone"
+        ]
+    },
+    {
+        "name": "F3",
+        "adjacent_zone": [
+            "F2",
+            "F6"
+        ]
+    },
+    {
+        "name": "F4",
+        "adjacent_zone": [
+            "F1",
+            "F5",
+            "F7"
+        ]
+    },
+    {
+        "name": "F5",
+        "adjacent_zone": [
+            "F2",
+            "F4",
+            "F6",
+            "F8"
+        ]
+    },
+    {
+        "name": "F6",
+        "adjacent_zone": [
+            "F3",
+            "F5",
+            "F9"
+        ]
+    },
+    {
+        "name": "F7",
+        "adjacent_zone": [
+            "F10",
+            "F4",
+            "F8"
+        ]
+    },
+    {
+        "name": "F8",
+        "adjacent_zone": [
+            "F11",
+            "F5",
+            "F7",
+            "F9"
+        ]
+    },
+    {
+        "name": "F9",
+        "adjacent_zone": [
+            "F12",
+            "F6",
+            "F8"
+        ]
+    },
+    {
+        "name": "MC",
+        "adjacent_zone": [
+            "MF",
+            "R2_EN_zone"
+        ]
+    },
+    {
+        "name": "MC_idle1",
+        "adjacent_zone": [
+            "MC_idle2",
+            "R1_start_zone"
+        ]
+    },
+    {
+        "name": "MC_idle2",
+        "adjacent_zone": [
+            "R1_start_zone",
+            "MC_idle1",
+            "MC_idle3",
+            "R2_EN_zone",
+            "staff_rack"
+        ]
+    },
+    {
+        "name": "MC_idle3",
+        "adjacent_zone": [
+            "MC_idle2",
+            "MC_idle4",
+            "R2_EN_zone",
+            "staff_rack"
+        ]
+    },
+    {
+        "name": "MC_idle4",
+        "adjacent_zone": [
+            "MC_idle3",
+            "MC_idle5",
+            "R2_EN_zone",
+            "R2_start_zone",
+            "staff_rack"
+        ]
+    },
+    {
+        "name": "MC_idle5",
+        "adjacent_zone": [
+            "MC_idle4",
+            "MC_idle6",
+            "R2_EN_zone",
+            "R2_start_zone"
+        ]
+    },
+    {
+        "name": "MC_idle6",
+        "adjacent_zone": [
+            "R2_start_zone",
+            "MC_idle5",
+            "spearhead_rack"
+        ]
+    },
+    {
+        "name": "MF",
+        "adjacent_zone": [
+            "MC_idle2",
+            "MC_idle3",
+            "MC_idle4",
+            "MC_idle5"
+        ]
+    },
+    {
+        "name": "R1_start_zone",
+        "adjacent_zone": [
+            "MC_idle1",
+            "MC_idle2"
+        ]
+    },
+    {
+        "name": "R2_EN_zone",
+        "adjacent_zone": [
+            "F2",
+            "MC_idle2",
+            "MC_idle3",
+            "MC_idle4",
+            "MC_idle5",
+            "forest"
+        ]
+    },
+    {
+        "name": "R2_EX_zone1",
+        "adjacent_zone": [
+            "ramp",
+            "R2_EX_zone2"
+        ]
+    },
+    {
+        "name": "R2_EX_zone2",
+        "adjacent_zone": [
+            "F10",
+            "F12",
+            "R2_EX_zone1"
+        ]
+    },
+    {
+        "name": "R2_start_zone",
+        "adjacent_zone": [
+            "MC_idle4",
+            "MC_idle5",
+            "MC_idle6"
+        ]
+    },
+    {
+        "name": "forest",
+        "adjacent_zone": [
+            "R2_EN_zone",
+            "R2_EX_zone1",
+            "R2_EX_zone2"
+        ]
+    },
+    {
+        "name": "ramp",
+        "adjacent_zone": [
+            "ARENA",
+            "ARENA_idle1",
+            "R2_EX_zone1"
+        ]
+    },
+    {
+        "name": "retry_zone",
+        "adjacent_zone": [
+            "ARENA_idle1",
+            "ARENA_idle2"
+        ]
+    },
+    {
+        "name": "spearhead_rack",
+        "adjacent_zone": [
+            "MC_idle6"
+        ]
+    },
+    {
+        "name": "staff_rack",
+        "adjacent_zone": [
+            "MC_idle3"
+        ]
+    },
+    {
+        "name": "tic_tac_toe_rack",
+        "adjacent_zone": [
+            "ARENA_idle5"
+        ]
+    },
+    {
+        "name": "used_weapon_area",
+        "adjacent_zone": [
+            "ARENA_idle4"
+        ]
+    },
+    {
+        "name": "wall",
+        "adjacent_zone": []
+    },
+    {
+        "name": "R1_path_1",
+        "adjacent_zone": []
+    },
+    {
+        "name": "R1_path_2",
+        "adjacent_zone": []
+    }
+]

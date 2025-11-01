@@ -1,7 +1,7 @@
  [
   {
     "id": "rule1",
-    "text": "未被标记为\"R2_access: false\"的区域默认为R2都可以进入, 但是明确标记了\"R2_access: false\"的区域R2均不可进入."
+    "text": "未被说明为\"R2不可以进入\"的区域默认为R2都可以进入, 但是明确说明了\"R2不可以进入\"的区域R2均不可进入."
   },
   {
     "id": "rule2",
@@ -25,10 +25,54 @@
   },
   {
     "id": "rule7",
-    "text": " forest 由 F1 到 F12 这12个格子组成."
+    "text": "forest 由 F1 到 F12 这12个格子组成."
   },
   {
     "id": "rule8",
     "text": "ramp是连接 MF 和 ARENA 的斜坡. 由于ramp的设计, 从 MF 进入 ARENA 时, 必须先经过 R2_EX_zone1、ramp、ARENA_idle1, 然后才能到达 retry_zone."
+  },
+  {
+    "id": "rule9",
+    "text": "必须站在 MC_idle6 区域, 才能 访问/触碰 到 spearhead_rack 上的物品(spearhead)."
+  },
+  {
+    "id": "rule10",
+    "text": "必须站在 MC_idle3 区域, 才能 访问/触碰 到 staff_rack物品(staff)."
+  },
+  {
+    "id": "rule11",
+    "text": "必须站在 ARENA_idle4 区域, 才能 访问/触碰 到 used_weapon_area."
+  },
+  {
+    "id": "rule12",
+    "text": "在所有R2不可进入的区域, R2只需要 访问/拿取 spearhead_rack 架子(rack) 上的 矛头(spearhead)."
+  },
+  {
+    "id": "rule13",
+    "text": "除了 spearhead_rack 区域之外, 任何R2不可进入的区域, R2全部都不可以进入, 不可以触碰."
+  },
+  {
+    "id": "rule14",
+    "text": "R2必须从 R2_EX_zone1 或者 ARENA_idle1 进入 ramp."
+  },
+  {
+    "id": "rule15",
+    "text": "R2不可以从 R2_EX_zone2 或者 ARENA_idle3 进入 ramp."
+  },
+  {
+    "id": "rule16",
+    "text": "R2不可以进入 R1_path_1 , R1_path_2."
+  },
+  {
+    "id": "rule17",
+    "text": "R2不能进入 R1_path_1 , R1_path_2."
+  },
+  {
+    "id": "rule18",
+    "text": "R2绝对要从 R2_EX_zone1 或者 ARENA_idle1 进入 ramp."
+  },
+  {
+    "id": "rule19",
+    "text": "R2不能从 R2_EX_zone2 或者 ARENA_idle3 进入 ramp."
   }
 ]

@@ -1,0 +1,42 @@
+[
+    {
+    "type": "natural_language_reply",
+    "content": "..................."
+    },
+
+    {
+        "type": "function_call",
+        "function_name": "get_zone_info",
+        "arguments": {
+            "name": "__zone_name"
+        }
+    },
+
+    {
+        "type": "function_call",
+        "function_name": "get_location_info",
+        "arguments": {}
+    },
+
+    {
+        "type": "instruction",
+        "instruction_name": "move_to",
+        "arguments": {
+            "zone_name": "__zone_name",
+            "x": "__x",
+            "y": "__y"
+        }
+    },
+
+    {
+        "type": "instruction",
+        "instruction_name": "__instruction_name",
+        "arguments": {
+            "__arg1": "__arg1_value",
+            "__arg2": "__arg2_value",
+            "__arg3": "__arg3_value"
+        }
+    }
+
+
+]

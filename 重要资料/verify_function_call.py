@@ -26,7 +26,7 @@ import time
 from pathlib import Path
 
 # ---------- 配置 ----------
-MODEL = "llama3.2:3b"  # 改成你实际在 Ollama 中的模型名，例如 "deepseek-r1:latest" 或 "llama3.2:3b"
+MODEL = "llama3.2:1b"  # 改成你实际在 Ollama 中的模型名，例如 "deepseek-r1:latest" 或 "llama3.2:3b"
 MAP_PATH = Path(__file__).resolve().parents[1] / "data" / "initial" / "map.json"
 
 # ---------- 工具函数 ----------
@@ -166,7 +166,7 @@ def main():
     # Step1: 构建合并 prompt（system + tool-spec + user question）
     combined_prompt = f"""
 系统说明:
-你是一个 Robocon 比赛地图推理助手，你可以调用以下 Python 工具函数：
+你是一个 Robocon 比赛地图推理助手，你可以调用以下工具函数：
 [
   {{
     "name": "get_zone_info",
@@ -192,7 +192,7 @@ def main():
 - 你可以使用中文或英文，但是返回的 JSON 必须是合法的 JSON。
 
 测试问题:
-请查询区域 'R2_EN_zone' 的详细信息，包括它的可进入区域。
+现在请你查询区域 'ramp' 的详细信息，包括它的可进入区域。
 """
     log("发送 prompt 到模型（一次性上下文）")
     stdout, stderr, rc = run_ollama(combined_prompt)

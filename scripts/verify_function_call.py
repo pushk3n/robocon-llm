@@ -6,6 +6,7 @@ verify_deepseek_verbose.py
 是否能输出 function_call 风格的 JSON 并与本地 map API 交互。
 
 特点:
+ - 增加时间统计，评估LLM调用性能。
  - 打印 stdout/stderr 的原始 repr（以便看隐藏字符）
  - 打印 subprocess returncode
  - 优先解析 JSON function_call（严格解析）
@@ -17,7 +18,7 @@ verify_deepseek_verbose.py
     cd ~/robocon-llm/repo/scripts
     python3 verify_deepseek_verbose.py
 """
-
+import os
 import json
 import re
 import subprocess
@@ -48,6 +49,9 @@ def debug_print(title, content):
 
 def get_zone_info(zone_name: str):
     """从 map.json 查表并返回 dict。保证 deterministic、100% 准确（取自 map.json）"""
+    # 计时开始：查表是 Python 的任务，速度应该极快
+    start_time = time.time() 
+    
     try:
         with open(MAP_PATH, "r", encoding="utf-8") as f:
             map_data = json.load(f)
@@ -57,19 +61,38 @@ def get_zone_info(zone_name: str):
     # 查找名字完全匹配的区域
     for zone in map_data.get("zones", []):
         if zone.get("name") == zone_name:
+            elapsed_time = time.time() - start_time
+            log(f"API/查表耗时: {elapsed_time:.4f}s")
             return zone
     # 如果没找到，尝试不区分大小写匹配（更宽容）
     for zone in map_data.get("zones", []):
         if zone.get("name", "").lower() == zone_name.lower():
+            elapsed_time = time.time() - start_time
+            log(f"API/查表耗时: {elapsed_time:.4f}s")
             return zone
+            
+    elapsed_time = time.time() - start_time
+    log(f"API/查表耗时: {elapsed_time:.4f}s")
     return {"error": f"未找到区域: {zone_name}"}
 
-def run_ollama(prompt: str, timeout: int = 120):
+def run_ollama(prompt: str, timeout: int = 120, use_cpu_only: bool = False):
     """
     通过 subprocess 调用 ollama run 并把 prompt 发到 stdin。
+    如果 use_cpu_only 为 True，则强制 Ollama 仅使用 CPU。
     返回 (stdout_str, stderr_str, returncode).
-    stdout/stderr 使用 'replace' 解码，保留尽可能多的信息。
     """
+    start_time = time.time()
+    
+    # 设置环境变量来控制 GPU 使用
+    env = os.environ.copy()
+    if use_cpu_only:
+        # OM_NUM_GPU=0 告诉 Ollama/llama.cpp 不使用 GPU
+        env['OM_NUM_GPU'] = '0'
+        log("警告: 强制使用 CPU 模式进行 LLM 调用...")
+    else:
+        # 允许 Ollama 使用 GPU (如果存在)
+        env.pop('OM_NUM_GPU', None)
+    
     try:
         proc = subprocess.run(
             ["ollama", "run", MODEL],
@@ -77,41 +100,22 @@ def run_ollama(prompt: str, timeout: int = 120):
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             timeout=timeout,
+            env=env  # 传递修改后的环境变量
         )
         stdout = proc.stdout.decode("utf-8", errors="replace")
         stderr = proc.stderr.decode("utf-8", errors="replace")
+        
+        elapsed_time = time.time() - start_time
+        log(f"LLM 调用总耗时: {elapsed_time:.4f}s {'(CPU ONLY)' if use_cpu_only else '(GPU/Default)'}")
+        
         return stdout, stderr, proc.returncode
     except subprocess.TimeoutExpired as e:
-        return "", f"TIMEOUT after {timeout}s", -1
+        elapsed_time = time.time() - start_time
+        return "", f"TIMEOUT after {timeout}s (Elapsed: {elapsed_time:.4f}s)", -1
     except Exception as e:
-        return "", f"CALL ERROR: {e}\n{traceback.format_exc()}", -2
+        elapsed_time = time.time() - start_time
+        return "", f"CALL ERROR (Elapsed: {elapsed_time:.4f}s): {e}\n{traceback.format_exc()}", -2
 
-def extract_first_json(text: str):
-    """
-    尝试从 text 中提取第一个 {...} JSON 片段并解析。
-    返回 (obj_or_None, raw_json_text_or_None, error_or_None)
-    """
-    match = re.search(r"\{.*\}", text, re.DOTALL)
-    if not match:
-        return None, None, "no_json_fragment"
-    raw = match.group(0)
-    try:
-        obj = json.loads(raw)
-        return obj, raw, None
-    except Exception as e:
-        return None, raw, f"json_parse_error: {e}"
-
-def extract_all_tokens(text: str):
-    """
-    从自然语言中抽取所有类似 token 的词（字母数字和下划线为一组），
-    返回一个 candidate list（按出现顺序）。
-    """
-    tokens = re.findall(r"[A-Za-z0-9_]+", text)
-    return tokens
-
-# ----------------------------------------
-# NEW/MODIFIED TOOL FUNCTION
-# ----------------------------------------
 def extract_first_json_robust(text: str):
     """
     尝试从 text 中提取第一个 {...} JSON 片段并解析。
@@ -192,96 +196,64 @@ def main():
 - 你可以使用中文或英文，但是返回的 JSON 必须是合法的 JSON。
 
 测试问题:
-请查询区域 'R2_EN_zone' 的详细信息，包括它的可进入区域。
+请查询区域 'R2_EX_zone1' 的详细信息，包括它的 R2_access 状态和邻接区域。
 """
-    log("发送 prompt 到模型（一次性上下文）")
-    stdout, stderr, rc = run_ollama(combined_prompt)
-
-    # Step2: 打印原始响应（详尽）
-    debug_print("模型 raw stdout (repr)", repr(stdout))
-    debug_print("模型 stdout (raw)", stdout)
-    if stderr and stderr.strip():
-        debug_print("模型 stderr", stderr)
-    debug_print("Subprocess returncode", rc)
-
-    # Step3: 尝试严格解析 JSON（优先）
-    # Step3: 尝试严格解析 JSON（优先）
-    # **替换为新的函数**
-    json_obj, raw_json, err = extract_first_json_robust(stdout) 
     
-    if json_obj is not None:
-        debug_print("找到 JSON 片段 raw", raw_json)
-        # ... 如果修复成功，err 会包含 "repaired_missing_braces" ...
-        if "repaired_missing_braces" in str(err):
-            log(f"JSON 修复成功: {err}") 
-        # ... 保持后续逻辑不变 ...
+    # ----------------------------------------------------
+    # 执行性能测试的函数
+    # ----------------------------------------------------
+    def run_full_test(use_cpu_only: bool):
+        mode_label = "CPU ONLY" if use_cpu_only else "GPU/DEFAULT"
+        log(f"===== 开始 {mode_label} 性能测试 (查询 F6) =====")
+        
+        # --- 第一次 LLM 调用 (Function Calling) ---
+        stdout1, stderr1, rc1 = run_ollama(combined_prompt, use_cpu_only=use_cpu_only)
 
-        # 检查 function_call 结构
-        fc = json_obj.get("function_call")
-        if not fc:
-            debug_print("JSON 中未包含 function_call 键", json_obj.keys())
-        else:
-            func_name = fc.get("name")
+        # Step2/3: 解析 JSON
+        json_obj, raw_json, err = extract_first_json_robust(stdout1) 
+        
+        if json_obj is not None:
+            # 简化解析，假设 function_call 成功
+            fc = json_obj.get("function_call", {})
             args = fc.get("arguments", {})
-            debug_print("解析到的 function name", func_name)
-            debug_print("解析到的 arguments", args)
+            zone_name = args.get("zone_name")
 
-            if func_name == "get_zone_info":
-                zone_name = args.get("zone_name")
-                debug_print("将执行 map 查询的 zone_name", zone_name)
-
-                # Step4: 执行 map 查询
+            if fc and fc.get("name") == "get_zone_info" and zone_name:
+                
+                # Step4: 执行 map 查询（Python API）
                 result = get_zone_info(zone_name or "")
-                debug_print(f"get_zone_info('{zone_name}') 返回", result)
-
-                # Step5: 把结果回传给模型做最终总结（闭环）
+                
+                # Step5: 构造闭环 Prompt
                 final_prompt = (
                     f"这是 get_zone_info('{zone_name}') 的结果: {json.dumps(result, ensure_ascii=False)}\n"
-                    "请基于上面的结果，用中文简要总结：这个区域的要点（位置、是否R2可进入、相邻区域）。"
+                    "请基于上面的结果，用中文简要总结：这个区域的要点（是否R2可进入、高度和邻接区域）。"
                 )
-                log("把 map 查询结果回传给模型，要求模型做自然语言总结")
-                stdout2, stderr2, rc2 = run_ollama(final_prompt)
-                debug_print("模型对 map 查询结果的总结 stdout (repr)", repr(stdout2))
-                debug_print("模型对 map 查询结果的总结 stdout (raw)", stdout2)
-                if stderr2 and stderr2.strip():
-                    debug_print("模型对 map 查询结果的总结 stderr", stderr2)
-                debug_print("Subprocess returncode (第二次调用)", rc2)
-                return  # 只做一次完整闭环测试
-
-    # Step6: 如果没能提取 JSON 或解析失败 -> fallback 分析
-    debug_print("JSON 提取情况", err)
-    log("进入 fallback 模式：打印模型输出、提取所有 candidate tokens 并尝试 fallback 查询")
-
-    tokens = extract_all_tokens(stdout)
-    debug_print("从模型输出提取到的 token 列表（candidate）", tokens)
-
-    # 打印常见候选和上下文，便于人工判断
-    if not tokens:
-        debug_print("模型输出为空或无可提取 token", stdout)
-        log("结束：未能从模型输出识别区域名")
-        return
-
-    # 尝试用第一个合理 token 做为区域名进行查询（非常宽容的 fallback）
-    candidate = tokens[0]
-    debug_print("选择第一个 candidate 作为区名尝试查询", candidate)
-    result = get_zone_info(candidate)
-    debug_print(f"get_zone_info('{candidate}') 返回", result)
-
-    # 把 fallback 结果也发回模型，请求模型做解释/更正（便于观察模型如何反应）
-    followup_prompt = (
-        f"模型原始回复是: {stdout}\n\n"
-        f"我基于你的回复尝试查询，并将 '{candidate}' 当作区域名查询，返回结果为: {json.dumps(result, ensure_ascii=False)}。\n"
-        "如果我误解了你的意图，请直接用 JSON 格式的 function_call 返回正确的 zone_name："
-        '{"function_call": {"name": "get_zone_info", "arguments": {"zone_name": "正确的区域名"}}}'
-    )
-    log("将 fallback 查询结果和原始模型回复一起回传，询问模型纠正（如果可能）")
-    stdout3, stderr3, rc3 = run_ollama(followup_prompt)
-    debug_print("模型对 fallback 情况的回复 stdout (repr)", repr(stdout3))
-    debug_print("模型对 fallback 情况的回复 stdout (raw)", stdout3)
-    if stderr3 and stderr3.strip():
-        debug_print("模型对 fallback 情况的回复 stderr", stderr3)
-    debug_print("Subprocess returncode (fallback call)", rc3)
-    log("结束（verbose 验证）")
+                log(f"把 map 查询结果回传给模型 ({mode_label})")
+                
+                # --- 第二次 LLM 调用 (总结/决策) ---
+                stdout2, stderr2, rc2 = run_ollama(final_prompt, use_cpu_only=use_cpu_only)
+                
+                debug_print(f"[{mode_label}] LLM 第一次调用输出 (请求 JSON)", stdout1)
+                debug_print(f"[{mode_label}] LLM 第二次调用输出 (总结)", stdout2)
+                
+            else:
+                log(f"JSON 结构错误或未识别函数名: {stdout1}")
+        else:
+            log(f"JSON 解析失败 ({mode_label}): {err}")
+        
+        log(f"===== {mode_label} 性能测试结束 =====")
+        print("\n" + "="*50 + "\n")
+    
+    
+    # ----------------------------------------------------
+    # 运行实际的两次测试
+    # ----------------------------------------------------
+    
+    # 测试 1: GPU/默认模式 (预计速度快)
+    run_full_test(use_cpu_only=False)
+    
+    # 测试 2: 纯 CPU 模式 (模拟边缘设备，预计速度慢)
+    run_full_test(use_cpu_only=True)
 
 print("==============================\n"*3)
 if __name__ == "__main__":
